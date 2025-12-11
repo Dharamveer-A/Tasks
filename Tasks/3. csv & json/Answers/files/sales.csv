@@ -1,0 +1,6 @@
+OrderID,Customer,Product,Quantity,Price,Date
+101,Aadi,Laptop,1,55000,2025-12-01
+102,Bharat,Mouse,2,1000,2025-12-02
+103,Charan,Notebook,5,200,2025-12-03
+104,Divya,Water Bottle,3,360,2025-12-04
+105,Elena,Headphones,1,1500,2025-12-05
