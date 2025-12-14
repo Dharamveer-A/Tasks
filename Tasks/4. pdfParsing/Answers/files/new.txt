@@ -1,0 +1,4 @@
+This is a simple PDF file.
+It contains just a few lines of text.
+Generated using Python and ReportLab.
+
