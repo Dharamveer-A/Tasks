@@ -1,0 +1,10 @@
+Rahul Sharma
+Email: rahul.sharma@email.com | Phone: +91-9000011111
+Career Objective
+Entry-level software developer with strong Python fundamentals.
+Education
+B.Sc Computer Science, XYZ College (2020–2023)
+Skills
+Python, C, SQL, HTML
+Projects
+Library Management System using Python

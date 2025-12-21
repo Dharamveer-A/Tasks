@@ -1,0 +1,18 @@
+Aadi Kumar
+Email: aadi.kumar@email.com | Phone: +91-9876543210
+Location: India
+
+Career Objective
+Motivated graduate seeking an entry-level position to apply technical and analytical skills.
+
+Education
+B.Tech in Computer Science, ABC University (2021–2025)
+
+Skills
+Python, Java, SQL, HTML, CSS, Basics of Machine Learning
+
+Projects
+Student Management System – Python, MySQL
+
+Declaration
+I hereby declare that the above information is true to the best of my knowledge.

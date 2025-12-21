@@ -1,0 +1,11 @@
+Job Title: AI / ML Engineer
+
+The AI/ML Engineer will work on machine learning models,
+data preprocessing, and model evaluation.
+
+Skills Required:
+Python, Machine Learning, TensorFlow, NumPy
+Basic deep learning knowledge
+
+Location: India
+Experience: Fresher / Entry Level

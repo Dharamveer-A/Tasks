@@ -1,0 +1,10 @@
+Karan Singh
+Email: karan.singh@email.com | Phone: +91-9000055555
+Career Objective
+AI & ML enthusiast aiming for research roles.
+Education
+B.Tech CSE (AI), MNO University (2020–2024)
+Skills
+Python, Machine Learning, TensorFlow
+Projects
+Face Recognition System

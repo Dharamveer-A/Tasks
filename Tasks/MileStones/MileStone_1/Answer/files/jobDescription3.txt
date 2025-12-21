@@ -1,0 +1,11 @@
+Job Title: Web Developer
+
+We are hiring a Web Developer with experience in front-end technologies.
+The candidate should be able to build responsive web applications.
+
+Skills Required:
+HTML, CSS, JavaScript, React
+Basic backend knowledge is a plus
+
+Location: Bangalore
+Experience: Fresher

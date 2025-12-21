@@ -1,0 +1,12 @@
+Job Title: Data Analyst
+
+The Data Analyst will be responsible for analyzing large datasets,
+creating reports, and visualizing insights.
+
+Skills Required:
+Python, Pandas, Excel, Power BI
+Basic knowledge of statistics
+Attention to detail
+
+Location: Remote
+Experience: 0-3 years

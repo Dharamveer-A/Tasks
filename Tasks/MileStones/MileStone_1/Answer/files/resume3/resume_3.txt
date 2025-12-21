@@ -1,0 +1,10 @@
+Arjun Patel
+Email: arjun.patel@email.com | Phone: +91-9000033333
+Career Objective
+Web developer with interest in full-stack development.
+Education
+B.E Computer Engineering, GHI Institute (2021–2025)
+Skills
+HTML, CSS, JavaScript, React
+Projects
+Personal Portfolio Website

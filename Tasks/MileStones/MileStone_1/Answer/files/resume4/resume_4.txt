@@ -1,0 +1,10 @@
+Neha Verma
+Email: neha.verma@email.com | Phone: +91-9000044444
+Career Objective
+Motivated MCA graduate seeking backend roles.
+Education
+MCA, JKL University (2022–2024)
+Skills
+Java, Spring Boot, MySQL
+Projects
+Online Examination System
