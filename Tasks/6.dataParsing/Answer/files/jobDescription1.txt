@@ -1,0 +1,13 @@
+Job Title: Software Developer
+
+We are looking for a Software Developer with strong knowledge of Python and SQL.
+The candidate should have experience in developing applications, debugging code,
+and working with databases.
+
+Skills Required:
+Python, SQL, HTML, CSS
+Good problem-solving skills
+Team collaboration
+
+Location: India
+Experience: Fresher / 0-2 years
