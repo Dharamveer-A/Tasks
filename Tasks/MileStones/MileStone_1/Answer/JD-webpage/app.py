@@ -78,6 +78,9 @@ if uploaded_file:
 
     rawContent = loadDocx(uploaded_file)
 
+    st.subheader("------------- Raw Content -------------")
+    st.write(rawContent)
+
     st.subheader("---------- Preview for Raw Content ----------")
     st.write(preview(rawContent))
 
@@ -90,8 +93,11 @@ if uploaded_file:
 
         outputPath = saveFile(cleanContent, fileName="output1")
 
-        st.success("Output saved successfully")
+        st.subheader("------------- Final Output ---------------")
+        st.write(cleanContent)
 
+        st.success("Output saved successfully")
+        
         st.download_button(
             label="Download Cleaned Output",
             data=cleanContent,
