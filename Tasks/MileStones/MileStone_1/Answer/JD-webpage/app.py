@@ -39,7 +39,7 @@ def cleanText(content):
     return-type : string
     """
     clean = content.lower()
-    clean = sub(r"[^a-zA-Z0-9/:\s]", "", clean)
+    clean = sub(r"[^a-zA-Z0-9/:\s-]", "", clean)
     clean = sub(r"\s+", " ", clean)
     return clean.strip()
 
