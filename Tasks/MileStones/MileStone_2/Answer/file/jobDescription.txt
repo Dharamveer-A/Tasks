@@ -1,0 +1,29 @@
+Job Title: Python Developer
+
+Job Description:
+We are looking for a Python developer with experience in backend systems
+and data-driven applications.
+
+Required Technical Skills:
+- Python
+- FastAPI
+- Django
+- SQL
+- PostgreSQL
+- Machine Learning
+- Deep Learning
+- NLP
+- AWS
+- Docker
+
+Required Soft Skills:
+- Communication
+- Teamwork
+- Critical thinking
+- Problem solving
+- Leadership
+- Time management
+
+Responsibilities:
+The candidate should collaborate with cross-functional teams,
+demonstrate strong communication skills, and deliver scalable solutions.

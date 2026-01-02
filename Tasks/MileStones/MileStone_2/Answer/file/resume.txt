@@ -1,0 +1,31 @@
+John Doe
+Software Engineer
+
+Professional Summary:
+I am a Python developer with strong experience in backend development
+and data analysis. I have worked on machine learning and NLP projects
+using modern frameworks.
+
+Technical Skills:
+- Python
+- Django
+- Flask
+- SQL
+- MySQL
+- Machine Learning
+- NLP
+- Git
+- Linux
+- AWS
+
+Soft Skills:
+- Communication
+- Teamwork
+- Problem solving
+- Time management
+- Adaptability
+
+Experience:
+Worked as a Python developer for 2 years.
+Collaborated with team members and demonstrated leadership skills
+while delivering projects on time.
