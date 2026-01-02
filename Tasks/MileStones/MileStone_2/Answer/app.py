@@ -2,155 +2,287 @@ import streamlit as st
 import pandas as pd
 import spacy
 import json
-from spacy.matcher import PhraseMatcher
 import re
+from spacy.matcher import PhraseMatcher
+from docx import Document
+import pdfplumber
 
-# -------------------- Load spaCy Model --------------------
 nlp = spacy.load("en_core_web_trf")
 
-# -------------------- Master Skill Lists --------------------
 master_technical_skills = {
-    "python", "java", "c", "c++", "c#", "javascript", "typescript",
-    "html", "css", "react", "angular", "node.js", "express.js",
-    "django", "flask", "fastapi",
-    "sql", "mysql", "postgresql", "mongodb",
+    # Programming Languages
+    "python", "java", "c", "c++", "c#", "go", "rust", "kotlin", "swift",
+    "javascript", "typescript", "php", "ruby", "r", "matlab", "scala",
+    "perl", "bash", "shell scripting",
+
+    # Web Technologies
+    "html", "css", "sass", "bootstrap", "tailwind css",
+    "react", "angular", "vue.js", "next.js", "nuxt.js",
+    "node.js", "express.js", "django", "flask", "fastapi",
+    "spring", "spring boot", "laravel", "asp.net",
+
+    # Databases
+    "mysql", "postgresql", "sqlite", "oracle", "sql server",
+    "mongodb", "cassandra", "dynamodb", "redis", "firebase",
+    "elasticsearch", "neo4j",
+
+    # Data Science & Analytics
+    "numpy", "pandas", "scipy", "matplotlib", "seaborn",
+    "plotly", "power bi", "tableau", "excel", "statistics",
+    "data analysis", "data visualization",
+
+    # Machine Learning & AI
     "machine learning", "deep learning", "artificial intelligence",
-    "tensorflow", "keras", "pytorch", "scikit-learn",
-    "nlp", "computer vision",
-    "aws", "azure", "gcp", "docker", "kubernetes",
-    "git", "github", "linux",
-    "data analysis", "data visualization", "power bi", "tableau"
+    "tensorflow", "keras", "pytorch", "scikit-learn", "xgboost",
+    "opencv", "nlp", "computer vision", "speech recognition",
+    "transformers", "huggingface", "langchain", "llm",
+
+    # Big Data
+    "hadoop", "spark", "pyspark", "kafka", "hive", "pig",
+    "hbase", "flink", "airflow", "databricks",
+
+    # Cloud & DevOps
+    "aws", "azure", "google cloud", "gcp",
+    "docker", "kubernetes", "terraform", "ansible",
+    "jenkins", "github actions", "ci/cd",
+    "linux", "unix",
+
+    # APIs & Backend
+    "rest api", "graphql", "grpc", "soap",
+    "microservices", "jwt", "oauth",
+
+    # Testing
+    "unit testing", "integration testing", "system testing",
+    "pytest", "unittest", "junit", "selenium", "cypress",
+    "postman",
+
+    # Mobile Development
+    "android", "ios", "flutter", "react native",
+    "swiftui", "kotlin multiplatform",
+
+    # Cybersecurity
+    "network security", "application security", "penetration testing",
+    "ethical hacking", "cryptography", "owasp",
+    "siem", "firewall",
+
+    # Operating Systems
+    "windows", "linux", "macos",
+
+    # Version Control & Tools
+    "git", "github", "gitlab", "bitbucket",
+    "jira", "confluence", "trello",
+
+    # Other Technical Skills
+    "data structures", "algorithms", "object oriented programming",
+    "design patterns", "system design",
+    "software development lifecycle", "agile", "scrum"
 }
 
 master_soft_skills = {
-    "communication", "teamwork", "leadership",
-    "problem solving", "critical thinking",
-    "time management", "adaptability",
-    "collaboration", "decision making",
-    "analytical thinking", "creativity"
+    # Communication
+    "communication", "verbal communication", "written communication",
+    "public speaking", "presentation skills", "active listening",
+    "business communication", "storytelling",
+
+    # Interpersonal Skills
+    "teamwork", "collaboration", "interpersonal skills",
+    "relationship building", "empathy", "emotional intelligence",
+    "conflict resolution", "negotiation",
+
+    # Leadership
+    "leadership", "people management", "team leadership",
+    "decision making", "delegation", "mentoring", "coaching",
+    "influencing", "strategic thinking",
+
+    # Problem Solving & Thinking
+    "problem solving", "critical thinking", "analytical thinking",
+    "logical reasoning", "creative thinking", "innovation",
+    "root cause analysis", "troubleshooting",
+
+    # Time & Work Management
+    "time management", "prioritization", "multitasking",
+    "work ethic", "self discipline", "accountability",
+    "goal setting", "organizational skills",
+
+    # Adaptability & Learning
+    "adaptability", "flexibility", "resilience",
+    "learning agility", "continuous learning",
+    "open mindedness", "growth mindset",
+
+    # Professionalism
+    "professionalism", "integrity", "ethical behavior",
+    "reliability", "punctuality", "confidentiality",
+
+    # Creativity & Innovation
+    "creativity", "idea generation", "design thinking",
+    "innovation mindset", "curiosity",
+
+    # Emotional & Personal Skills
+    "stress management", "self awareness", "self motivation",
+    "confidence", "positive attitude", "emotional control",
+
+    # Customer & Service Orientation
+    "customer focus", "customer service",
+    "client management", "stakeholder management",
+    "user empathy", "service mindset",
+
+    # Collaboration & Culture
+    "cross functional collaboration", "cultural awareness",
+    "diversity and inclusion", "remote collaboration",
+    "team alignment",
+
+    # Conflict & Crisis Handling
+    "conflict management", "crisis management",
+    "handling pressure", "decision making under pressure",
+
+    # Work Style
+    "independent work", "collaborative work",
+    "attention to detail", "quality focus",
+    "result oriented", "ownership",
+
+    # Ethics & Values
+    "honesty", "trustworthiness", "respect",
+    "fairness", "social responsibility"
 }
 
-# -------------------- Utility Functions --------------------
+def load_file(uploaded_file):
+    """
+    Unified loader for TXT, DOCX, and PDF files
+    """
+    if uploaded_file is None:
+        return ""
+
+    filename = uploaded_file.name.lower()
+
+    if filename.endswith(".txt"):
+        return uploaded_file.read().decode("utf-8", errors="ignore")
+
+    elif filename.endswith(".docx"):
+        doc = Document(uploaded_file)
+        return "\n".join(p.text for p in doc.paragraphs if p.text.strip())
+
+    elif filename.endswith(".pdf"):
+        text = ""
+        with pdfplumber.open(uploaded_file) as pdf:
+            for page in pdf.pages:
+                page_text = page.extract_text()
+                if page_text:
+                    text += page_text + "\n"
+        return text
+
+    else:
+        st.error("Unsupported file format")
+        return ""
+
 def clean_text(text):
     text = text.lower()
     text = re.sub(r"[^a-z0-9\s]", " ", text)
     text = re.sub(r"\s+", " ", text)
     return text.strip()
 
-# -------------------- Skill Extraction --------------------
 def extract_technical_skills(doc):
-    found_skills = set()
+    found = set()
     matcher = PhraseMatcher(nlp.vocab, attr="LOWER")
-    patterns = [nlp(skill) for skill in master_technical_skills]
-    matcher.add("TECH_SKILLS", patterns)
+    matcher.add("TECH", [nlp(skill) for skill in master_technical_skills])
 
     for _, start, end in matcher(doc):
-        found_skills.add(doc[start:end].text.lower())
+        found.add(doc[start:end].text.lower())
 
-    return list(found_skills)
+    return list(found)
 
 def extract_soft_skills(doc):
-    found_skills = set()
+    found = set()
     tokens = {token.text.lower() for token in doc if not token.is_punct}
 
     for skill in master_soft_skills:
         if set(skill.split()).issubset(tokens):
-            found_skills.add(skill)
+            found.add(skill)
 
-    return list(found_skills)
+    return list(found)
 
 def extract_skills(text):
-    text = clean_text(text)
-    doc = nlp(text)
+    doc = nlp(clean_text(text))
     return {
         "technical_skills": extract_technical_skills(doc),
         "soft_skills": extract_soft_skills(doc)
     }
 
-# -------------------- JSON Save --------------------
 def save_to_json(data, filename):
     with open(filename, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=4)
 
-# -------------------- Streamlit UI --------------------
 st.set_page_config(page_title="Skill Extraction using NLP", layout="wide")
 st.title("Skill Extraction using NLP")
 
 menu = st.sidebar.radio("Select Option", ["Resume", "Job Description", "Compare"])
 
-# -------------------- Resume --------------------
 if menu == "Resume":
     st.subheader("Resume Skill Extraction")
-    resume_text = st.text_area("Paste Resume Text")
+    resume_file = st.file_uploader(
+        "Upload Resume (TXT / DOCX / PDF)",
+        type=["txt", "docx", "pdf"]
+    )
 
     if st.button("Extract Resume Skills"):
-        resume_skills = extract_skills(resume_text)
-        save_to_json(resume_skills, "resume_skills.json")
+        resume_text = load_file(resume_file)
+        skills = extract_skills(resume_text)
+
+        save_to_json(skills, "resume_skills.json")
 
         st.success("Resume skills saved to resume_skills.json")
+        st.write("### Technical Skills", skills["technical_skills"])
+        st.write("### Soft Skills", skills["soft_skills"])
 
-        st.markdown("### Technical Skills")
-        st.write(resume_skills["technical_skills"])
-
-        st.markdown("### Soft Skills")
-        st.write(resume_skills["soft_skills"])
-
-# -------------------- Job Description --------------------
 elif menu == "Job Description":
     st.subheader("Job Description Skill Extraction")
-    jd_text = st.text_area("Paste Job Description Text")
+    jd_file = st.file_uploader(
+        "Upload Job Description (TXT / DOCX / PDF)",
+        type=["txt", "docx", "pdf"]
+    )
 
     if st.button("Extract JD Skills"):
-        jd_skills = extract_skills(jd_text)
-        save_to_json(jd_skills, "jd_skills.json")
+        jd_text = load_file(jd_file)
+        skills = extract_skills(jd_text)
+
+        save_to_json(skills, "jd_skills.json")
 
         st.success("JD skills saved to jd_skills.json")
+        st.write("### Technical Skills", skills["technical_skills"])
+        st.write("### Soft Skills", skills["soft_skills"])
 
-        st.markdown("### Technical Skills")
-        st.write(jd_skills["technical_skills"])
-
-        st.markdown("### Soft Skills")
-        st.write(jd_skills["soft_skills"])
-
-# -------------------- Compare --------------------
 elif menu == "Compare":
     st.subheader("Resume vs Job Description Comparison")
 
-    resume_text = st.text_area("Paste Resume Text")
-    jd_text = st.text_area("Paste Job Description Text")
+    resume_file = st.file_uploader(
+        "Upload Resume",
+        type=["txt", "docx", "pdf"]
+    )
+    jd_file = st.file_uploader(
+        "Upload Job Description",
+        type=["txt", "docx", "pdf"]
+    )
 
     if st.button("Compare Skills"):
-        resume = extract_skills(resume_text)
-        jd = extract_skills(jd_text)
+        resume = extract_skills(load_file(resume_file))
+        jd = extract_skills(load_file(jd_file))
 
-        resume_tech = set(resume["technical_skills"])
-        jd_tech = set(jd["technical_skills"])
-        resume_soft = set(resume["soft_skills"])
-        jd_soft = set(jd["soft_skills"])
+        matched_tech = set(resume["technical_skills"]) & set(jd["technical_skills"])
+        missing_tech = set(jd["technical_skills"]) - set(resume["technical_skills"])
 
-        matched_tech = resume_tech & jd_tech
-        missing_tech = jd_tech - resume_tech
-        matched_soft = resume_soft & jd_soft
-        missing_soft = jd_soft - resume_soft
+        matched_soft = set(resume["soft_skills"]) & set(jd["soft_skills"])
+        missing_soft = set(jd["soft_skills"]) - set(resume["soft_skills"])
 
         col1, col2 = st.columns(2)
 
         with col1:
-            st.markdown("### ✅ Matching Technical Skills")
-            st.write(list(matched_tech))
-
-            st.markdown("### ❌ Missing Technical Skills")
-            st.write(list(missing_tech))
+            st.write("### Matching Technical Skills", list(matched_tech))
+            st.write("### Missing Technical Skills", list(missing_tech))
 
         with col2:
-            st.markdown("### ✅ Matching Soft Skills")
-            st.write(list(matched_soft))
+            st.write("### Matching Soft Skills", list(matched_soft))
+            st.write("### Missing Soft Skills", list(missing_soft))
 
-            st.markdown("### ❌ Missing Soft Skills")
-            st.write(list(missing_soft))
-
-        # Save comparison JSON
-        comparison_data = {
+        comparison = {
             "resume": resume,
             "job_description": jd,
             "matched": {
@@ -163,10 +295,9 @@ elif menu == "Compare":
             }
         }
 
-        save_to_json(comparison_data, "comparison_skills.json")
+        save_to_json(comparison, "comparison_skills.json")
         st.success("Comparison saved to comparison_skills.json")
 
-        # Visualization
         df = pd.DataFrame({
             "Category": ["Matched Skills", "Missing Skills"],
             "Count": [
