@@ -1,0 +1,23 @@
+Job Title: Full Stack Developer
+
+Job Description:
+We are looking for a Full Stack Developer with strong backend and frontend skills.
+
+Required Skills:
+- Python
+- Java
+- SQL
+- MongoDB
+- React
+- Node.js
+- Spring Boot
+- REST APIs
+
+Preferred Skills:
+- Leadership
+- Communication
+- Cloud deployment experience
+
+Responsibilities:
+Develop scalable applications using modern frameworks.
+Collaborate with cross-functional teams.

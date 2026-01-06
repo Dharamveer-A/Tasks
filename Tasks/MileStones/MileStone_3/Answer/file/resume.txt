@@ -1,0 +1,26 @@
+John Doe
+Software Engineer
+
+Professional Summary:
+Software Engineer with experience in backend and frontend development.
+Strong problem-solving and communication skills.
+
+Technical Skills:
+- Python
+- Java
+- SQL
+- MySQL
+- Spring Boot
+- REST APIs
+- MongoDB
+- Git
+- Basic React
+
+Soft Skills:
+- Communication
+- Team collaboration
+- Leadership
+
+Experience:
+Worked on web applications using Spring Boot and MySQL.
+Developed RESTful services and integrated MongoDB for data storage.
