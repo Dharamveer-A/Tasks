@@ -1,0 +1,73 @@
+{
+    "resume": {
+        "technical_skills": [
+            "data analysis",
+            "aws",
+            "machine learning",
+            "git",
+            "django",
+            "nlp",
+            "flask",
+            "python",
+            "mysql",
+            "linux"
+        ],
+        "soft_skills": [
+            "teamwork",
+            "adaptability",
+            "team leadership",
+            "leadership",
+            "problem solving",
+            "time management",
+            "communication"
+        ]
+    },
+    "job_description": {
+        "technical_skills": [
+            "postgresql",
+            "deep learning",
+            "docker",
+            "aws",
+            "machine learning",
+            "django",
+            "fastapi",
+            "nlp",
+            "python"
+        ],
+        "soft_skills": [
+            "teamwork",
+            "critical thinking",
+            "leadership",
+            "problem solving",
+            "time management",
+            "communication"
+        ]
+    },
+    "matched": {
+        "technical": [
+            "aws",
+            "machine learning",
+            "django",
+            "nlp",
+            "python"
+        ],
+        "soft": [
+            "teamwork",
+            "leadership",
+            "problem solving",
+            "time management",
+            "communication"
+        ]
+    },
+    "missing": {
+        "technical": [
+            "fastapi",
+            "postgresql",
+            "docker",
+            "deep learning"
+        ],
+        "soft": [
+            "critical thinking"
+        ]
+    }
+}
