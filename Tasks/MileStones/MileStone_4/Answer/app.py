@@ -62,7 +62,6 @@ ranking = []
 
 for i, jd_skill in enumerate(jd_skills):
     max_sim = similarity[i].max() if resume_skills else 0
-
     if max_sim >= 0.8:
         matched.append(jd_skill)
     elif max_sim >= 0.5:
@@ -72,13 +71,11 @@ for i, jd_skill in enumerate(jd_skills):
         ranking.append((jd_skill, round(1 - max_sim, 2)))
 
 overall_match = int((len(matched) / len(jd_skills)) * 100)
-
 k1, k2, k3, k4 = st.columns(4)
 k1.metric("Overall Match", f"{overall_match}%")
 k2.metric("Matched Skills", len(matched))
 k3.metric("Partial Matches", len(partial))
 k4.metric("Missing Skills", len(missing))
-
 tab1, tab2, tab3 = st.tabs([
     "Similarity Heatmap",
     "Skill Gap Report",
@@ -87,41 +84,33 @@ tab1, tab2, tab3 = st.tabs([
 
 with tab1:
     st.subheader("Skill Similarity Heatmap")
-
     heatmap = go.Figure(data=go.Heatmap(
         z=similarity,
         x=resume_skills,
         y=jd_skills
     ))
-
     heatmap.update_layout(height=500)
     st.plotly_chart(heatmap, use_container_width=True)
 
 with tab2:
     c1, c2, c3 = st.columns(3)
-
     with c1:
         st.success("Matched Skills")
         st.write(matched)
-
     with c2:
         st.warning("Partial Matches")
         st.write(partial)
-
     with c3:
         st.error("Missing Skills")
         st.write(missing)
 
 with tab3:
     st.subheader("Ranked Missing Skills (Critical First)")
-
     if ranking:
         df_rank = pd.DataFrame(
             ranking, columns=["Skill", "Gap Score"]
         ).sort_values("Gap Score", ascending=False)
-
         st.dataframe(df_rank, use_container_width=True)
-
         st.download_button(
             "Download Skill Gap Report",
             df_rank.to_csv(index=False),
