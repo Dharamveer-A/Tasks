@@ -4,14 +4,13 @@ Job Description:
 We are looking for a Full Stack Developer with strong backend and frontend skills.
 
 Required Skills:
-- Python (Pandas, NumPy, Scikit-learn)
+- Python (Pandas, NumPy)
 - Java
 - SQL
 - MongoDB
 - React
 - Spring Boot
 - REST APIs
-- Docker
 - Data Analysis
 - AWS
 
@@ -21,5 +20,5 @@ Preferred Skills:
 - Cloud deployment experience
 
 Responsibilities:
-Develop scalable applications using modern frameworks.
+Develop applications using modern frameworks.
 Collaborate with cross-functional teams.
