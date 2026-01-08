@@ -8,12 +8,11 @@ Strong problem-solving and communication skills.
 Technical Skills:
 - Python
 - Java
-- SQL
 - MySQL
 - Spring Boot
 - REST APIs
 - MongoDB
-- Git
+- Statistical Data Interpretation
 - Basic React
 
 Soft Skills:

@@ -38,10 +38,136 @@ if not resume_text or not jd_text:
     st.stop()
 
 SKILLS = [
-    "python","java","sql","mysql","mongodb","aws",
-    "react","node.js","spring boot",
-    "machine learning","data analysis",
-    "communication","leadership"
+     # Programming Languages
+    "python", "java", "c", "c++", "c#", "go", "rust", "kotlin", "swift",
+    "javascript", "typescript", "php", "ruby", "r", "matlab", "scala",
+    "perl", "bash", "shell scripting",
+
+    # Web Technologies
+    "html", "css", "sass", "bootstrap", "tailwind css",
+    "react", "angular", "vue.js", "next.js", "nuxt.js",
+    "node.js", "express.js", "django", "flask", "fastapi",
+    "spring", "spring boot", "laravel", "asp.net",
+
+    # Databases
+    "mysql", "postgresql", "sqlite", "oracle", "sql server",
+    "mongodb", "cassandra", "dynamodb", "redis", "firebase",
+    "elasticsearch", "neo4j",
+
+    # Data Science & Analytics
+    "numpy", "pandas", "scipy", "matplotlib", "seaborn",
+    "plotly", "power bi", "tableau", "excel", "statistics",
+    "data analysis", "data visualization",
+
+    # Machine Learning & AI
+    "machine learning", "deep learning", "artificial intelligence",
+    "tensorflow", "keras", "pytorch", "scikit-learn", "xgboost",
+    "opencv", "nlp", "computer vision", "speech recognition",
+    "transformers", "huggingface", "langchain", "llm",
+
+    # Big Data
+    "hadoop", "spark", "pyspark", "kafka", "hive", "pig",
+    "hbase", "flink", "airflow", "databricks",
+
+    # Cloud & DevOps
+    "aws", "azure", "google cloud", "gcp",
+    "docker", "kubernetes", "terraform", "ansible",
+    "jenkins", "github actions", "ci/cd",
+    "linux", "unix",
+
+    # APIs & Backend
+    "rest api", "graphql", "grpc", "soap",
+    "microservices", "jwt", "oauth",
+
+    # Testing
+    "unit testing", "integration testing", "system testing",
+    "pytest", "unittest", "junit", "selenium", "cypress",
+    "postman",
+
+    # Mobile Development
+    "android", "ios", "flutter", "react native",
+    "swiftui", "kotlin multiplatform",
+
+    # Cybersecurity
+    "network security", "application security", "penetration testing",
+    "ethical hacking", "cryptography", "owasp",
+    "siem", "firewall",
+
+    # Operating Systems
+    "windows", "linux", "macos",
+
+    # Version Control & Tools
+    "git", "github", "gitlab", "bitbucket",
+    "jira", "confluence", "trello",
+
+    # Other Technical Skills
+    "data structures", "algorithms", "object oriented programming",
+    "design patterns", "system design",
+    "software development lifecycle", "agile", "scrum",
+    # Communication
+    "communication", "verbal communication", "written communication",
+    "public speaking", "presentation skills", "active listening",
+    "business communication", "storytelling",
+
+    # Interpersonal Skills
+    "teamwork", "collaboration", "interpersonal skills",
+    "relationship building", "empathy", "emotional intelligence",
+    "conflict resolution", "negotiation",
+
+    # Leadership
+    "leadership", "people management", "team leadership",
+    "decision making", "delegation", "mentoring", "coaching",
+    "influencing", "strategic thinking",
+
+    # Problem Solving & Thinking
+    "problem solving", "critical thinking", "analytical thinking",
+    "logical reasoning", "creative thinking", "innovation",
+    "root cause analysis", "troubleshooting",
+
+    # Time & Work Management
+    "time management", "prioritization", "multitasking",
+    "work ethic", "self discipline", "accountability",
+    "goal setting", "organizational skills",
+
+    # Adaptability & Learning
+    "adaptability", "flexibility", "resilience",
+    "learning agility", "continuous learning",
+    "open mindedness", "growth mindset",
+
+    # Professionalism
+    "professionalism", "integrity", "ethical behavior",
+    "reliability", "punctuality", "confidentiality",
+
+    # Creativity & Innovation
+    "creativity", "idea generation", "design thinking",
+    "innovation mindset", "curiosity",
+
+    # Emotional & Personal Skills
+    "stress management", "self awareness", "self motivation",
+    "confidence", "positive attitude", "emotional control",
+
+    # Customer & Service Orientation
+    "customer focus", "customer service",
+    "client management", "stakeholder management",
+    "user empathy", "service mindset",
+
+    # Collaboration & Culture
+    "cross functional collaboration", "cultural awareness",
+    "diversity and inclusion", "remote collaboration",
+    "team alignment",
+
+    # Conflict & Crisis Handling
+    "conflict management", "crisis management",
+    "handling pressure", "decision making under pressure",
+
+    # Work Style
+    "independent work", "collaborative work",
+    "attention to detail", "quality focus",
+    "result oriented", "ownership",
+
+    # Ethics & Values
+    "honesty", "trustworthiness", "respect",
+    "fairness", "social responsibility"
 ]
 
 def extract_skills(text):
