@@ -1,7 +1,3 @@
-# ===================================================
-# Unified Skill Gap Analysis Dashboard (FINAL CODE)
-# ===================================================
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -10,18 +6,12 @@ import plotly.graph_objects as go
 from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer
 
-# ===================================================
-# Page Config
-# ===================================================
 st.set_page_config(
     page_title="Unified Skill Gap Analysis Dashboard",
     page_icon="🌸",
     layout="wide"
 )
 
-# ===================================================
-# Styling
-# ===================================================
 st.markdown("""
 <style>
 .pastel-card {
@@ -33,9 +23,6 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# ===================================================
-# Header
-# ===================================================
 st.markdown("""
 <h1>🌸 Unified Skill Gap Analysis Dashboard</h1>
 <p style="color:#6b7280;">
@@ -66,10 +53,6 @@ if not resume_text or not jd_text:
 
 st.success("Files uploaded successfully")
 st.markdown('</div>', unsafe_allow_html=True)
-
-# ===================================================
-# Preview Section
-# ===================================================
 st.markdown('<div class="pastel-card">', unsafe_allow_html=True)
 st.subheader("🔍 Document Preview")
 
@@ -82,10 +65,6 @@ with c2:
     st.text(jd_text[:400])
 
 st.markdown('</div>', unsafe_allow_html=True)
-
-# ===================================================
-# Basic Keyword Skill Analysis
-# ===================================================
 BASIC_SKILLS = [
     "python", "sql", "machine learning", "deep learning",
     "statistics", "data analysis", "aws", "communication"
@@ -119,10 +98,6 @@ ax.set_title("Basic Skill Distribution")
 st.pyplot(fig)
 
 st.markdown('</div>', unsafe_allow_html=True)
-
-# ===================================================
-# Advanced Semantic Skill Analysis
-# ===================================================
 @st.cache_resource
 def load_model():
     return SentenceTransformer("all-MiniLM-L6-v2")
@@ -302,9 +277,6 @@ k4.metric("Missing", len(missing))
 
 st.markdown('</div>', unsafe_allow_html=True)
 
-# ===================================================
-# Similarity Heatmap (NO ERROR)
-# ===================================================
 st.markdown('<div class="pastel-card">', unsafe_allow_html=True)
 st.subheader("🔥 Skill Similarity Heatmap")
 
@@ -319,9 +291,6 @@ st.plotly_chart(heatmap, use_container_width=True)
 
 st.markdown('</div>', unsafe_allow_html=True)
 
-# ===================================================
-# Skill Gap Report
-# ===================================================
 st.markdown('<div class="pastel-card">', unsafe_allow_html=True)
 st.subheader("📋 Skill Gap Report")
 
@@ -338,9 +307,6 @@ with c3:
 
 st.markdown('</div>', unsafe_allow_html=True)
 
-# ===================================================
-# Ranked Missing Skills + Download
-# ===================================================
 st.markdown('<div class="pastel-card">', unsafe_allow_html=True)
 st.subheader("🚨 Ranked Missing Skills (Critical First)")
 
