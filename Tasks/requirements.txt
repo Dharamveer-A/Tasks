@@ -1,0 +1,7 @@
+pandas
+spacy
+numpy
+streamlit
+plotly
+matplotlib
+sentence_transformers
