@@ -1,0 +1,157 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /Resources 4 0 R /MediaBox [0 0 612 792] /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> >> >>
+endobj
+5 0 obj
+<< /Length 3151 >>
+stream
+BT
+/F1 10 Tf
+50 750 Td
+(JOHN DOE) Tj
+0 -12 Td
+(Senior Software Engineer) Tj
+0 -12 Td
+(Email: john.doe@email.com | Phone: \(555\) 123-4567) Tj
+0 -12 Td
+(LinkedIn: linkedin.com/in/johndoe | GitHub: github.com/johndoe) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(PROFESSIONAL SUMMARY) Tj
+0 -12 Td
+(Experienced Software Engineer with 5+ years of expertise in developing scalable ) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(TECHNICAL SKILLS) Tj
+0 -12 Td
+(Programming Languages: Python, JavaScript, Java, C++, SQL) Tj
+0 -12 Td
+(Web Technologies: React, Node.js, Django, Flask, HTML, CSS, Bootstrap) Tj
+0 -12 Td
+(Databases: MySQL, PostgreSQL, MongoDB, Redis) Tj
+0 -12 Td
+(Machine Learning & AI: TensorFlow, PyTorch, Scikit-learn, NLP, Computer Vision) Tj
+0 -12 Td
+(Cloud & DevOps: AWS, Docker, Kubernetes, Jenkins, CI/CD) Tj
+0 -12 Td
+(Tools: Git, GitHub, Jira, Postman) Tj
+0 -12 Td
+(Data Science: Pandas, NumPy, Matplotlib, Data Analysis, Data Visualization) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(SOFT SKILLS) Tj
+0 -12 Td
+(- Leadership and team management) Tj
+0 -12 Td
+(- Excellent communication and presentation skills) Tj
+0 -12 Td
+(- Strong problem solving and critical thinking) Tj
+0 -12 Td
+(- Teamwork and collaboration) Tj
+0 -12 Td
+(- Time management and prioritization) Tj
+0 -12 Td
+(- Adaptability and continuous learning) Tj
+0 -12 Td
+(- Emotional intelligence) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(PROFESSIONAL EXPERIENCE) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Senior Software Engineer | Tech Innovations Inc. | 2021 - Present) Tj
+0 -12 Td
+(- Led a team of 5 developers in building scalable microservices architecture) Tj
+0 -12 Td
+(- Implemented machine learning models for customer behavior prediction) Tj
+0 -12 Td
+(- Developed REST APIs using Django and Flask) Tj
+0 -12 Td
+(- Managed AWS cloud infrastructure and deployment pipelines) Tj
+0 -12 Td
+(- Conducted code reviews and mentored junior developers) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Software Engineer | Digital Solutions Corp. | 2019 - 2021) Tj
+0 -12 Td
+(- Built responsive web applications using React and Node.js) Tj
+0 -12 Td
+(- Optimized database queries improving performance by 40%) Tj
+0 -12 Td
+(- Collaborated with cross-functional teams on product development) Tj
+0 -12 Td
+(- Implemented unit testing and integration testing frameworks) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(EDUCATION) Tj
+0 -12 Td
+(Bachelor of Science in Computer Science) Tj
+0 -12 Td
+(State University | 2015 - 2019) Tj
+0 -12 Td
+(GPA: 3.8/4.0) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(CERTIFICATIONS) Tj
+0 -12 Td
+(- AWS Certified Solutions Architect) Tj
+0 -12 Td
+(- Python for Data Science \(Coursera\)) Tj
+0 -12 Td
+(- Machine Learning Specialization \(Stanford Online\)) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(PROJECTS) Tj
+0 -12 Td
+(E-Commerce Platform) Tj
+0 -12 Td
+(- Built full-stack e-commerce application using React, Node.js, and MongoDB) Tj
+0 -12 Td
+(- Implemented user authentication with JWT and OAuth) Tj
+0 -12 Td
+(- Deployed on AWS with Docker containers) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Image Classification System) Tj
+0 -12 Td
+(- Developed deep learning model using TensorFlow and Keras) Tj
+0 -12 Td
+(- Achieved 95% accuracy on test dataset) Tj
+0 -12 Td
+(- Used OpenCV for image preprocessing) Tj
+0 -12 Td
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f
+0000000009 00000 n
+0000000058 00000 n
+0000000115 00000 n
+0000000229 00000 n
+0000000329 00000 n
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+3637
+%%EOF

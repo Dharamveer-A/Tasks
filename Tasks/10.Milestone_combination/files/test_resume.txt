@@ -1,0 +1,61 @@
+JOHN DOE
+Senior Software Engineer
+Email: john.doe@email.com | Phone: (555) 123-4567
+LinkedIn: linkedin.com/in/johndoe | GitHub: github.com/johndoe
+
+PROFESSIONAL SUMMARY
+Experienced Software Engineer with 5+ years of expertise in developing scalable web applications and machine learning solutions. Strong background in Python, JavaScript, and cloud technologies with proven leadership and problem-solving skills.
+
+TECHNICAL SKILLS
+Programming Languages: Python, JavaScript, Java, C++, SQL
+Web Technologies: React, Node.js, Django, Flask, HTML, CSS, Bootstrap
+Databases: MySQL, PostgreSQL, MongoDB, Redis
+Machine Learning & AI: TensorFlow, PyTorch, Scikit-learn, NLP, Computer Vision
+Cloud & DevOps: AWS, Docker, Kubernetes, Jenkins, CI/CD
+Tools: Git, GitHub, Jira, Postman
+Data Science: Pandas, NumPy, Matplotlib, Data Analysis, Data Visualization
+
+SOFT SKILLS
+- Leadership and team management
+- Excellent communication and presentation skills
+- Strong problem solving and critical thinking
+- Teamwork and collaboration
+- Time management and prioritization
+- Adaptability and continuous learning
+- Emotional intelligence
+
+PROFESSIONAL EXPERIENCE
+
+Senior Software Engineer | Tech Innovations Inc. | 2021 - Present
+- Led a team of 5 developers in building scalable microservices architecture
+- Implemented machine learning models for customer behavior prediction
+- Developed REST APIs using Django and Flask
+- Managed AWS cloud infrastructure and deployment pipelines
+- Conducted code reviews and mentored junior developers
+
+Software Engineer | Digital Solutions Corp. | 2019 - 2021
+- Built responsive web applications using React and Node.js
+- Optimized database queries improving performance by 40%
+- Collaborated with cross-functional teams on product development
+- Implemented unit testing and integration testing frameworks
+
+EDUCATION
+Bachelor of Science in Computer Science
+State University | 2015 - 2019
+GPA: 3.8/4.0
+
+CERTIFICATIONS
+- AWS Certified Solutions Architect
+- Python for Data Science (Coursera)
+- Machine Learning Specialization (Stanford Online)
+
+PROJECTS
+E-Commerce Platform
+- Built full-stack e-commerce application using React, Node.js, and MongoDB
+- Implemented user authentication with JWT and OAuth
+- Deployed on AWS with Docker containers
+
+Image Classification System
+- Developed deep learning model using TensorFlow and Keras
+- Achieved 95% accuracy on test dataset
+- Used OpenCV for image preprocessing
