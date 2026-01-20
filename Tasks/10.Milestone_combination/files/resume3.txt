@@ -1,0 +1,61 @@
+MICHAEL CHEN
+Frontend Developer
+Email: michael.chen@email.com | Phone: (555) 456-7890
+Portfolio: michaelchen.dev | GitHub: github.com/mchen
+
+PROFESSIONAL SUMMARY
+Creative Frontend Developer with 3+ years building responsive, user-friendly web applications. Specialized in React, TypeScript, and modern CSS frameworks with strong design sensibility.
+
+TECHNICAL SKILLS
+Languages: JavaScript, TypeScript, HTML, CSS
+Frameworks: React, Next.js, Vue.js, Angular
+Styling: Tailwind CSS, SASS, Bootstrap, CSS-in-JS
+Tools: Git, Webpack, Vite, NPM, Yarn
+Testing: Jest, Cypress, React Testing Library
+Design: Figma, Adobe XD
+Others: REST API, GraphQL, Responsive Design
+
+SOFT SKILLS
+- Creativity and design thinking
+- Attention to detail
+- Communication with designers and backend teams
+- Problem solving
+- Time management
+- Teamwork
+- User empathy
+- Adaptability
+
+EXPERIENCE
+
+Frontend Developer | WebDesign Studio | 2021 - Present
+- Developed responsive web applications using React and TypeScript
+- Collaborated with UX/UI designers to implement pixel-perfect designs
+- Optimized application performance achieving 95+ Lighthouse scores
+- Implemented accessibility features following WCAG guidelines
+- Mentored junior developers on best practices
+
+Junior Frontend Developer | StartupXYZ | 2020 - 2021
+- Built reusable component library using React
+- Integrated RESTful APIs with frontend applications
+- Performed cross-browser testing and bug fixes
+- Participated in agile development process
+
+EDUCATION
+Bachelor of Science in Computer Science
+University of Technology | 2016 - 2020
+
+CERTIFICATIONS
+- React Developer Certification
+- Frontend Masters Complete Path
+- JavaScript Algorithms Certification
+
+PROJECTS
+E-Learning Platform
+- Built interactive learning platform with React and Next.js
+- Implemented video player with custom controls
+- Integrated payment gateway
+
+Portfolio Website Builder
+- Created drag-and-drop website builder
+- Used TypeScript for type safety
+- Deployed on Vercel with CI/CD

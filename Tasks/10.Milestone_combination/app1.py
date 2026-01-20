@@ -169,7 +169,9 @@ if jd_file and resume_file:
         "Milestone 1 Completed: Documents uploaded, parsed, cleaned and previewed successfully."
     )
 
-#-----------------------------------------------------------------------------------------------------------------------------------------
+
+#-----------------------------------------------------------------------------------------------------------------------------------
+
     # Milestone - 2
 
     st.markdown(
@@ -180,7 +182,7 @@ if jd_file and resume_file:
             </h2>
             <p style="color:white;">
                 Module: Skill Extraction using NLP <br>
-                • spaCy and BERT-based pipelines  <br>
+                • spaCy-based pipelines <br>
                 • Technical and soft skills identification <br>
                 • Structured skill display
             </p>
@@ -189,7 +191,8 @@ if jd_file and resume_file:
         unsafe_allow_html=True
     )
 
-    st.subheader("Experience :")
+    # ---------------- Experience ----------------
+    st.subheader("Experience")
 
     col1, col2 = st.columns(2)
     with col1:
@@ -197,175 +200,41 @@ if jd_file and resume_file:
     with col2:
         st.write("JD Experience found:", jd_experience)
 
+    # ---------------- NLP Model ----------------
+    import spacy
+    from spacy.matcher import PhraseMatcher
+
     nlp = spacy.load("en_core_web_trf")
 
+    # ---------------- Skill Masters ----------------
     master_technical_skills = {
-        # Programming Languages
-        "python", "java", "c", "c++", "c#", "go", "rust", "kotlin", "swift",
-        "javascript", "typescript", "php", "ruby", "r", "matlab", "scala",
-        "perl", "bash", "shell scripting",
-
-        # Web Technologies
-        "html", "css", "sass", "bootstrap", "tailwind css",
-        "react", "angular", "vue.js", "next.js", "nuxt.js",
-        "node.js", "express.js", "django", "flask", "fastapi",
-        "spring", "spring boot", "laravel", "asp.net",
-
-        # Databases
-        "mysql", "postgresql", "sqlite", "oracle", "sql server",
-        "mongodb", "cassandra", "dynamodb", "redis", "firebase",
-        "elasticsearch", "neo4j",
-
-        # Data Science & Analytics
-        "numpy", "pandas", "scipy", "matplotlib", "seaborn",
-        "plotly", "power bi", "tableau", "excel", "statistics",
-        "data analysis", "data visualization",
-
-        # Machine Learning & AI
-        "machine learning", "deep learning", "artificial intelligence",
-        "tensorflow", "keras", "pytorch", "scikit-learn", "xgboost",
-        "opencv", "nlp", "computer vision", "speech recognition",
-        "transformers", "huggingface", "langchain", "llm",
-
-        # Big Data
-        "hadoop", "spark", "pyspark", "kafka", "hive", "pig",
-        "hbase", "flink", "airflow", "databricks",
-
-        # Cloud & DevOps
-        "aws", "azure", "google cloud", "gcp",
-        "docker", "kubernetes", "terraform", "ansible",
-        "jenkins", "github actions", "ci/cd",
-        "linux", "unix",
-
-        # APIs & Backend
-        "rest api", "graphql", "grpc", "soap",
-        "microservices", "jwt", "oauth",
-
-        # Testing
-        "unit testing", "integration testing", "system testing",
-        "pytest", "unittest", "junit", "selenium", "cypress",
-        "postman",
-
-        # Mobile Development
-        "android", "ios", "flutter", "react native",
-        "swiftui", "kotlin multiplatform",
-
-        # Cybersecurity
-        "network security", "application security", "penetration testing",
-        "ethical hacking", "cryptography", "owasp",
-        "siem", "firewall",
-
-        # Operating Systems
-        "windows", "linux", "macos",
-
-        # Version Control & Tools
-        "git", "github", "gitlab", "bitbucket",
-        "jira", "confluence", "trello",
-
-        # Other Technical Skills
-        "data structures", "algorithms", "object oriented programming",
-        "design patterns", "system design",
-        "software development lifecycle", "agile", "scrum"
+        "python","java","c","c++","javascript","react","spring boot","node.js",
+        "mysql","mongodb","postgresql","aws","docker","kubernetes",
+        "pandas","numpy","data analysis","machine learning","nlp"
     }
 
     master_soft_skills = {
-        # Communication
-        "communication", "verbal communication", "written communication",
-        "public speaking", "presentation skills", "active listening",
-        "business communication", "storytelling",
-
-        # Interpersonal Skills
-        "teamwork", "collaboration", "interpersonal skills",
-        "relationship building", "empathy", "emotional intelligence",
-        "conflict resolution", "negotiation",
-
-        # Leadership
-        "leadership", "people management", "team leadership",
-        "decision making", "delegation", "mentoring", "coaching",
-        "influencing", "strategic thinking",
-
-        # Problem Solving & Thinking
-        "problem solving", "critical thinking", "analytical thinking",
-        "logical reasoning", "creative thinking", "innovation",
-        "root cause analysis", "troubleshooting",
-
-        # Time & Work Management
-        "time management", "prioritization", "multitasking",
-        "work ethic", "self discipline", "accountability",
-        "goal setting", "organizational skills",
-
-        # Adaptability & Learning
-        "adaptability", "flexibility", "resilience",
-        "learning agility", "continuous learning",
-        "open mindedness", "growth mindset",
-
-        # Professionalism
-        "professionalism", "integrity", "ethical behavior",
-        "reliability", "punctuality", "confidentiality",
-
-        # Creativity & Innovation
-        "creativity", "idea generation", "design thinking",
-        "innovation mindset", "curiosity",
-
-        # Emotional & Personal Skills
-        "stress management", "self awareness", "self motivation",
-        "confidence", "positive attitude", "emotional control",
-
-        # Customer & Service Orientation
-        "customer focus", "customer service",
-        "client management", "stakeholder management",
-        "user empathy", "service mindset",
-
-        # Collaboration & Culture
-        "cross functional collaboration", "cultural awareness",
-        "diversity and inclusion", "remote collaboration",
-        "team alignment",
-
-        # Conflict & Crisis Handling
-        "conflict management", "crisis management",
-        "handling pressure", "decision making under pressure",
-
-        # Work Style
-        "independent work", "collaborative work",
-        "attention to detail", "quality focus",
-        "result oriented", "ownership",
-
-        # Ethics & Values
-        "honesty", "trustworthiness", "respect",
-        "fairness", "social responsibility"
+        "communication","teamwork","leadership","problem solving",
+        "time management","adaptability","critical thinking"
     }
 
+    # ---------------- Skill Extraction Functions ----------------
+    def extract_technical_skills(text, skill_set):
+        if not text:
+            return []
+        matcher = PhraseMatcher(nlp.vocab, attr="LOWER")
+        patterns = [nlp.make_doc(skill) for skill in skill_set]
+        matcher.add("TECH", patterns)
+        doc = nlp(text)
+        return sorted({doc[start:end].text.lower() for _, start, end in matcher(doc)})
 
     def extract_soft_skills(text, skill_set):
         if not text:
             return []
-
         text = text.lower()
-        found_skills = set()
+        return sorted({skill for skill in skill_set if skill in text})
 
-        for skill in skill_set:
-            if skill in text:
-                found_skills.add(skill)
-
-        return sorted(found_skills)
-
-    def extract_technical_skills(text, skill_set):
-        if not text:
-            return []
-
-        matcher = PhraseMatcher(nlp.vocab, attr="LOWER")
-        patterns = [nlp.make_doc(skill) for skill in skill_set]
-        matcher.add("TECH_SKILLS", patterns)
-
-        doc = nlp(text)
-        matches = matcher(doc)
-
-        skills_found = set()
-        for _, start, end in matches:
-            skills_found.add(doc[start:end].text.lower())
-
-        return sorted(skills_found)
-
+    # ---------------- Extract Skills ----------------
     resume_skills = {
         "technical": extract_technical_skills(cleaned_resume, master_technical_skills),
         "soft": extract_soft_skills(cleaned_resume, master_soft_skills)
@@ -376,118 +245,69 @@ if jd_file and resume_file:
         "soft": extract_soft_skills(cleaned_jd, master_soft_skills)
     }
 
-    st.subheader("Extracted Skills")
+    # ---------------- Skill Comparison ----------------
+    resume_all = set(resume_skills["technical"]) | set(resume_skills["soft"])
+    jd_all = set(jd_skills["technical"]) | set(jd_skills["soft"])
+
+    matched_skills = sorted(resume_all & jd_all)
+    missing_skills = sorted(jd_all - resume_all)
+    extra_skills = sorted(resume_all - jd_all)
+
+    # ---------------- Extracted Skills UI ----------------
+    st.markdown("<h2 style='text-align:center;'>Extracted Skills</h2>", unsafe_allow_html=True)
 
     col1, col2 = st.columns(2)
 
     with col1:
-        st.markdown("### Resume Skills")
-        st.write("Technical:", resume_skills["technical"])
-        st.write("Soft:", resume_skills["soft"])
+        st.markdown("### 👤 Resume Skills")
+        st.markdown("**Technical**")
+        for s in resume_skills["technical"]:
+            st.success(s)
+
+        st.markdown("**Soft Skills**")
+        for s in resume_skills["soft"]:
+            st.success(s)
 
     with col2:
-        st.markdown("### JD Skills")
-        st.write("Technical:", jd_skills["technical"])
-        st.write("Soft:", jd_skills["soft"])
+        st.markdown("### 📄 JD Skills")
+        st.markdown("**Technical**")
+        for s in jd_skills["technical"]:
+            st.success(s)
 
-    def donut_chart(tech_count, soft_count, title):
-        labels = ["Technical Skills", "Soft Skills"]
-        sizes = [tech_count, soft_count]
-        if sum(sizes) == 0:
-            sizes = [1, 1]
+        st.markdown("**Soft Skills**")
+        for s in jd_skills["soft"]:
+            st.success(s)
 
-        fig = plt.figure(figsize=(4, 4))
-        ax = fig.add_axes([0.15, 0.15, 0.7, 0.7]) 
-
-        wedges, _, _ = ax.pie(
-            sizes,
-            startangle=90,
-            autopct="%1.0f%%",
-            radius=1,
-            wedgeprops=dict(width=0.4, edgecolor="white")
-        )
-
-        ax.set(aspect="equal")
-        ax.set_title(title, pad=10)
-        ax.legend(
-            wedges,
-            labels,
-            loc="lower center",
-            bbox_to_anchor=(0.5, -0.25),
-            ncol=2,
-            frameon=False
-        )
-
-        st.pyplot(fig, use_container_width=False)
-
-
-
-
-    st.subheader("Skill Distribution Analysis")
-
-    col1, col2 = st.columns(2)
+    # ---------------- Matched / Missing / Extra ----------------
+    col1, col2, col3 = st.columns(3)
 
     with col1:
-        donut_chart(
-            len(resume_skills["technical"]),
-            len(resume_skills["soft"]),
-            "Resume Skill Distribution"
-        )
+        st.markdown("<div style='background:#e8f5e9;padding:15px;border-radius:10px'><h4>✅ Matched Skills</h4></div>", unsafe_allow_html=True)
+        for s in matched_skills:
+            st.success(s)
 
     with col2:
-        donut_chart(
-            len(jd_skills["technical"]),
-            len(jd_skills["soft"]),
-            "JD Skill Distribution"
-        )
+        st.markdown("<div style='background:#ffebee;padding:15px;border-radius:10px'><h4>⚠️ Missing Skills</h4></div>", unsafe_allow_html=True)
+        for s in missing_skills:
+            st.error(s)
 
-    def compute_metrics(resume_skills, jd_skills):
-        resume_tech = set(resume_skills["technical"])
-        resume_soft = set(resume_skills["soft"])
-        jd_tech = set(jd_skills["technical"])
-        jd_soft = set(jd_skills["soft"])
+    with col3:
+        st.markdown("<div style='background:#e3f2fd;padding:15px;border-radius:10px'><h4>➕ Extra Skills</h4></div>", unsafe_allow_html=True)
+        for s in extra_skills:
+            st.info(s)
 
-        matched_skills = (resume_tech & jd_tech) | (resume_soft & jd_soft)
-        total_jd_skills = len(jd_tech) + len(jd_soft)
+    # ---------------- Metrics ----------------
+    match_percent = round((len(matched_skills) / len(jd_all)) * 100, 1) if jd_all else 0
 
-        match_percentage = 0
-        if total_jd_skills > 0:
-            match_percentage = round((len(matched_skills) / total_jd_skills) * 100, 1)
+    m1, m2, m3, m4 = st.columns(4)
+    m1.metric("Resume Skills", len(resume_all))
+    m2.metric("JD Skills", len(jd_all))
+    m3.metric("Matched Skills", len(matched_skills))
+    m4.metric("Match %", f"{match_percent}%")
 
-        return {
-            "resume_tech": len(resume_tech),
-            "resume_soft": len(resume_soft),
-            "jd_tech": len(jd_tech),
-            "jd_soft": len(jd_soft),
-            "total_resume": len(resume_tech) + len(resume_soft),
-            "total_jd": total_jd_skills,
-            "match_percent": match_percentage
-        }
-    metrics = compute_metrics(resume_skills, jd_skills)
 
-    st.subheader("Skill Extraction Metrics")
 
-    col1, col2, col3, col4 = st.columns(4)
 
-    col1.metric(
-        label="Technical Skills",
-        value=metrics["jd_tech"]
-    )
-
-    col2.metric(
-        label="Soft Skills",
-        value=metrics["jd_soft"]
-    )
-
-    col3.metric(
-        label="Total Skills",
-        value=metrics["total_jd"]
-    )
-
-    col4.metric(
-        label="Avg Skill Match %",
-        value=f'{metrics["match_percent"]}%'
-    )
 
 #------------------------------------------------------------------------------------------------------------------------------------------
     # Milestone - 3
@@ -702,17 +522,21 @@ if jd_file and resume_file:
 #---------------------------------------------------------------------------------------------------------------------------------------------
     # Milestone - 4
 
-    # ---------------- HEADER ----------------
-    st.markdown("""
-    <div style="background-color:#4a90e2;padding:15px;border-radius:8px">
-    <h2 style="color:white;text-align:center;">
-    Milestone 4: Dashboard and Report Export Module
-    </h2>
-    <p style="color:white;text-align:center;">
-    Interactive dashboard • Graphs • Multi-format report export
-    </p>
-    </div>
-    """, unsafe_allow_html=True)
+
+    st.markdown(
+        """
+        <div style="background-color:#4a5bdc;padding:20px;border-radius:10px">
+            <h2 style="color:white;">
+                Milestone 4: Dashboard and Report Export Module
+            </h2>
+            <p style="color:white;">
+                Interactive dashboard • Graphs • Multi-format report export
+            </p>
+        </div>
+        <br>
+        """,
+        unsafe_allow_html=True
+    )
 
     st.write("")
 

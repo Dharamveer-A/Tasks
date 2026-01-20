@@ -1,0 +1,231 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /Resources 4 0 R /MediaBox [0 0 612 792] /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> >> >>
+endobj
+5 0 obj
+<< /Length 3733 >>
+stream
+BT
+/F1 10 Tf
+50 750 Td
+(CAREER OPPORTUNITY) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Position: DevOps Engineer) Tj
+0 -12 Td
+(Organization: CloudTech Systems) Tj
+0 -12 Td
+(Base: Austin, TX / Remote) Tj
+0 -12 Td
+(Years of Experience: 4-6 years) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(ROLE SUMMARY) Tj
+0 -12 Td
+(We need a skilled DevOps Engineer to automate, optimize, and maintain our cloud ) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(CORE TECHNICAL SKILLS) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Cloud Platforms:) Tj
+0 -12 Td
+(- AWS \(EC2, S3, RDS, Lambda, CloudFormation\)) Tj
+0 -12 Td
+(- Azure or Google Cloud Platform) Tj
+0 -12 Td
+(- Cloud security best practices) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Infrastructure as Code:) Tj
+0 -12 Td
+(- Terraform) Tj
+0 -12 Td
+(- Ansible) Tj
+0 -12 Td
+(- CloudFormation) Tj
+0 -12 Td
+(- Pulumi \(nice to have\)) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Containerization & Orchestration:) Tj
+0 -12 Td
+(- Docker) Tj
+0 -12 Td
+(- Kubernetes) Tj
+0 -12 Td
+(- Helm charts) Tj
+0 -12 Td
+(- Container security) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(CI/CD:) Tj
+0 -12 Td
+(- Jenkins) Tj
+0 -12 Td
+(- GitLab CI/CD) Tj
+0 -12 Td
+(- GitHub Actions) Tj
+0 -12 Td
+(- ArgoCD) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Scripting & Programming:) Tj
+0 -12 Td
+(- Python) Tj
+0 -12 Td
+(- Bash/Shell scripting) Tj
+0 -12 Td
+(- Go \(preferred\)) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Monitoring & Logging:) Tj
+0 -12 Td
+(- Prometheus) Tj
+0 -12 Td
+(- Grafana) Tj
+0 -12 Td
+(- ELK Stack \(Elasticsearch, Logstash, Kibana\)) Tj
+0 -12 Td
+(- DataDog or New Relic) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Version Control:) Tj
+0 -12 Td
+(- Git) Tj
+0 -12 Td
+(- GitHub/GitLab) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(ESSENTIAL SOFT SKILLS) Tj
+0 -12 Td
+(- Strong problem-solving abilities) Tj
+0 -12 Td
+(- Excellent communication) Tj
+0 -12 Td
+(- Team collaboration) Tj
+0 -12 Td
+(- Documentation skills) Tj
+0 -12 Td
+(- Ownership and accountability) Tj
+0 -12 Td
+(- Adaptability to new technologies) Tj
+0 -12 Td
+(- Mentoring and knowledge sharing) Tj
+0 -12 Td
+(- Time management) Tj
+0 -12 Td
+(- Critical thinking) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(RESPONSIBILITIES) Tj
+0 -12 Td
+(- Design and implement CI/CD pipelines) Tj
+0 -12 Td
+(- Manage and optimize cloud infrastructure) Tj
+0 -12 Td
+(- Automate deployment processes) Tj
+0 -12 Td
+(- Monitor system performance and reliability) Tj
+0 -12 Td
+(- Implement security best practices) Tj
+0 -12 Td
+(- Handle incident response and troubleshooting) Tj
+0 -12 Td
+(- Collaborate with development teams) Tj
+0 -12 Td
+(- Maintain documentation) Tj
+0 -12 Td
+(- Optimize cloud costs) Tj
+0 -12 Td
+(- Participate in on-call rotation) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(REQUIREMENTS) Tj
+0 -12 Td
+(- Bachelor's degree in Computer Science or related field) Tj
+0 -12 Td
+(- 4-6 years of DevOps/SRE experience) Tj
+0 -12 Td
+(- Strong Linux/Unix administration skills) Tj
+0 -12 Td
+(- Experience with microservices architecture) Tj
+0 -12 Td
+(- Understanding of networking concepts) Tj
+0 -12 Td
+(- Database administration knowledge) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(BONUS QUALIFICATIONS) Tj
+0 -12 Td
+(- AWS/Azure/GCP certifications) Tj
+0 -12 Td
+(- Kubernetes certifications \(CKA/CKAD\)) Tj
+0 -12 Td
+(- Experience with service mesh \(Istio, Linkerd\)) Tj
+0 -12 Td
+(- Knowledge of serverless architectures) Tj
+0 -12 Td
+(- Experience with HashiCorp tools \(Vault, Consul\)) Tj
+0 -12 Td
+(- Contributions to open-source DevOps tools) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(COMPENSATION & BENEFITS) Tj
+0 -12 Td
+(- Competitive salary \($110k-$160k based on experience\)) Tj
+0 -12 Td
+(- Performance bonuses) Tj
+0 -12 Td
+(- Stock options) Tj
+0 -12 Td
+(- Comprehensive healthcare) Tj
+0 -12 Td
+(- Remote work options) Tj
+0 -12 Td
+(- Learning & certification budget) Tj
+0 -12 Td
+(- Latest MacBook Pro or Linux workstation) Tj
+0 -12 Td
+(- Conference attendance opportunities) Tj
+0 -12 Td
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f
+0000000009 00000 n
+0000000058 00000 n
+0000000115 00000 n
+0000000229 00000 n
+0000000329 00000 n
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+4219
+%%EOF

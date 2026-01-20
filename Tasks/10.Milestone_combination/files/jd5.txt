@@ -1,0 +1,65 @@
+JOB POSTING
+
+Position: Junior Full Stack Developer
+Company: TechGrowth Startup
+Location: Remote
+Experience Level: 0-2 years
+
+ABOUT THE ROLE
+Perfect opportunity for recent graduates or career changers! We're looking for motivated junior developers eager to learn and grow with our team.
+
+REQUIRED TECHNICAL SKILLS
+- JavaScript (ES6+)
+- HTML5 and CSS3
+- React or Vue.js basics
+- Node.js fundamentals
+- Git version control
+- REST API concepts
+- Basic SQL (MySQL or PostgreSQL)
+- Responsive web design
+
+NICE TO HAVE
+- TypeScript
+- MongoDB
+- Docker basics
+- AWS or cloud platform exposure
+- Testing frameworks (Jest)
+- Agile methodology experience
+
+SOFT SKILLS WE VALUE
+- Strong desire to learn
+- Good communication skills
+- Teamwork and collaboration
+- Problem-solving mindset
+- Attention to detail
+- Time management
+- Accountability
+- Positive attitude
+- Adaptability
+
+WHAT YOU'LL DO
+- Write clean, maintainable code
+- Build features for web applications
+- Learn from senior developers
+- Participate in code reviews
+- Fix bugs and issues
+- Attend daily standups
+- Contribute to documentation
+- Ask questions and seek feedback
+
+QUALIFICATIONS
+- Bachelor's degree in Computer Science or related field (or equivalent bootcamp/self-taught experience)
+- Portfolio of personal projects
+- Understanding of web development fundamentals
+- Passion for technology
+- Willingness to learn new technologies
+
+WHAT WE OFFER
+- Mentorship from experienced developers
+- Structured learning path
+- Salary: $55k-$75k
+- Health insurance
+- Remote work flexibility
+- Modern tech stack
+- Collaborative culture
+- Growth opportunities

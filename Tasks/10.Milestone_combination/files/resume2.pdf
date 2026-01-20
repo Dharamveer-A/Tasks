@@ -1,0 +1,163 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /Resources 4 0 R /MediaBox [0 0 612 792] /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> >> >>
+endobj
+5 0 obj
+<< /Length 3061 >>
+stream
+BT
+/F1 10 Tf
+50 750 Td
+(SARAH JOHNSON) Tj
+0 -12 Td
+(Data Scientist) Tj
+0 -12 Td
+(Email: sarah.j@email.com | Phone: \(555\) 987-6543) Tj
+0 -12 Td
+(Portfolio: sarahjohnson.io | LinkedIn: linkedin.com/in/sarahjohnson) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(PROFESSIONAL SUMMARY) Tj
+0 -12 Td
+(Results-driven Data Scientist with 4 years of experience in statistical analysis) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(TECHNICAL SKILLS) Tj
+0 -12 Td
+(Programming: Python, R, SQL, Scala) Tj
+0 -12 Td
+(Data Science: Pandas, NumPy, SciPy, Scikit-learn, Statistics) Tj
+0 -12 Td
+(Machine Learning: TensorFlow, Keras, XGBoost, Random Forest) Tj
+0 -12 Td
+(Big Data: Spark, PySpark, Hadoop, Hive, Kafka) Tj
+0 -12 Td
+(Databases: PostgreSQL, MySQL, MongoDB, Cassandra) Tj
+0 -12 Td
+(Visualization: Tableau, Power BI, Matplotlib, Seaborn, Plotly) Tj
+0 -12 Td
+(Cloud: AWS, Google Cloud, Azure) Tj
+0 -12 Td
+(Tools: Jupyter, Git, Docker, Airflow) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(SOFT SKILLS) Tj
+0 -12 Td
+(- Analytical thinking and data-driven decision making) Tj
+0 -12 Td
+(- Communication and storytelling with data) Tj
+0 -12 Td
+(- Collaboration with cross-functional teams) Tj
+0 -12 Td
+(- Problem solving and critical thinking) Tj
+0 -12 Td
+(- Attention to detail) Tj
+0 -12 Td
+(- Time management) Tj
+0 -12 Td
+(- Continuous learning mindset) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(WORK EXPERIENCE) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Senior Data Scientist | Analytics Corp | 2022 - Present) Tj
+0 -12 Td
+(- Built predictive models improving customer retention by 25%) Tj
+0 -12 Td
+(- Developed recommendation system using collaborative filtering) Tj
+0 -12 Td
+(- Created automated data pipelines using Airflow and Spark) Tj
+0 -12 Td
+(- Presented insights to C-level executives) Tj
+0 -12 Td
+(- Mentored junior data scientists) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Data Scientist | DataTech Solutions | 2020 - 2022) Tj
+0 -12 Td
+(- Performed exploratory data analysis on large datasets) Tj
+0 -12 Td
+(- Implemented A/B testing frameworks for product features) Tj
+0 -12 Td
+(- Built dashboards using Tableau and Power BI) Tj
+0 -12 Td
+(- Collaborated with engineering teams on ML model deployment) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(EDUCATION) Tj
+0 -12 Td
+(Master of Science in Data Science) Tj
+0 -12 Td
+(Tech University | 2018 - 2020) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Bachelor of Science in Statistics) Tj
+0 -12 Td
+(State College | 2014 - 2018) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(CERTIFICATIONS) Tj
+0 -12 Td
+(- Google Cloud Professional Data Engineer) Tj
+0 -12 Td
+(- Tableau Desktop Specialist) Tj
+0 -12 Td
+(- Deep Learning Specialization \(Coursera\)) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(PROJECTS) Tj
+0 -12 Td
+(Customer Churn Prediction) Tj
+0 -12 Td
+(- Analyzed historical data to predict customer churn) Tj
+0 -12 Td
+(- Achieved 87% accuracy using ensemble methods) Tj
+0 -12 Td
+(- Deployed model to production using Flask API) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Sentiment Analysis Tool) Tj
+0 -12 Td
+(- Built NLP pipeline for social media sentiment analysis) Tj
+0 -12 Td
+(- Processed over 1M tweets using Spark) Tj
+0 -12 Td
+(- Visualized results in real-time dashboard) Tj
+0 -12 Td
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f
+0000000009 00000 n
+0000000058 00000 n
+0000000115 00000 n
+0000000229 00000 n
+0000000329 00000 n
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+3547
+%%EOF

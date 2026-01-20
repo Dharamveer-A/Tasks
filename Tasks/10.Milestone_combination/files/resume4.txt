@@ -1,0 +1,67 @@
+ALEX RODRIGUEZ
+DevOps Engineer
+alex.rodriguez@email.com | (555) 234-5678
+LinkedIn: linkedin.com/in/alexrodriguez | GitHub: github.com/alexrod
+
+PROFESSIONAL SUMMARY
+Experienced DevOps Engineer with 5 years specializing in cloud infrastructure, automation, and CI/CD pipelines. Expert in AWS, Kubernetes, and Infrastructure as Code with strong problem-solving skills.
+
+TECHNICAL SKILLS
+Cloud Platforms: AWS, Google Cloud, Azure
+Containers & Orchestration: Docker, Kubernetes, Helm
+Infrastructure as Code: Terraform, Ansible, CloudFormation
+CI/CD: Jenkins, GitLab CI, GitHub Actions, CircleCI
+Scripting: Python, Bash, Shell, PowerShell
+Monitoring: Prometheus, Grafana, ELK Stack, DataDog
+Version Control: Git, GitHub, GitLab
+Databases: PostgreSQL, MySQL, MongoDB, Redis
+Operating Systems: Linux, Ubuntu, CentOS
+Other: Nginx, Apache, Microservices
+
+SOFT SKILLS
+- Strong problem-solving and troubleshooting
+- Excellent communication and collaboration
+- Team leadership and mentoring
+- Documentation and knowledge sharing
+- Adaptability and continuous learning
+- Critical thinking
+- Time management
+- Attention to detail
+
+PROFESSIONAL EXPERIENCE
+
+Senior DevOps Engineer | CloudSystems Inc. | 2021 - Present
+- Designed and implemented CI/CD pipelines reducing deployment time by 60%
+- Managed AWS infrastructure serving 10M+ users
+- Automated infrastructure provisioning using Terraform
+- Implemented monitoring solutions with Prometheus and Grafana
+- Led migration to Kubernetes cluster
+- Reduced cloud costs by 30% through optimization
+
+DevOps Engineer | TechStart Solutions | 2019 - 2021
+- Built Docker containerization for microservices
+- Created automated deployment scripts
+- Managed Linux servers and databases
+- Implemented logging with ELK stack
+- Participated in on-call rotation
+
+EDUCATION
+Bachelor of Science in Computer Engineering
+Tech Institute | 2015 - 2019
+
+CERTIFICATIONS
+- AWS Certified Solutions Architect - Professional
+- Certified Kubernetes Administrator (CKA)
+- HashiCorp Certified: Terraform Associate
+- Linux Foundation Certified Engineer
+
+PROJECTS
+Multi-Cloud Infrastructure
+- Built hybrid cloud infrastructure across AWS and GCP
+- Implemented disaster recovery solutions
+- Achieved 99.99% uptime
+
+Automated Deployment Platform
+- Created self-service deployment platform
+- Reduced deployment errors by 80%
+- Integrated with Slack for notifications

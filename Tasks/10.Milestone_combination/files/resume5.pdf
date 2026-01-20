@@ -1,0 +1,167 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /Resources 4 0 R /MediaBox [0 0 612 792] /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> >> >>
+endobj
+5 0 obj
+<< /Length 2649 >>
+stream
+BT
+/F1 10 Tf
+50 750 Td
+(EMILY WILSON) Tj
+0 -12 Td
+(Junior Software Developer) Tj
+0 -12 Td
+(emily.wilson@email.com | \(555\) 111-2222) Tj
+0 -12 Td
+(Portfolio: emilywilson.dev | GitHub: github.com/ewilson) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(PROFESSIONAL SUMMARY) Tj
+0 -12 Td
+(Enthusiastic Junior Developer with 1 year of professional experience and strong ) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(TECHNICAL SKILLS) Tj
+0 -12 Td
+(Programming: JavaScript, Python, HTML, CSS) Tj
+0 -12 Td
+(Frameworks: React, Node.js, Express) Tj
+0 -12 Td
+(Databases: MySQL, MongoDB) Tj
+0 -12 Td
+(Tools: Git, GitHub, VS Code, Postman) Tj
+0 -12 Td
+(Others: REST API, JSON, Bootstrap) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(SOFT SKILLS) Tj
+0 -12 Td
+(- Eager to learn and grow) Tj
+0 -12 Td
+(- Strong communication) Tj
+0 -12 Td
+(- Teamwork and collaboration) Tj
+0 -12 Td
+(- Problem solving) Tj
+0 -12 Td
+(- Attention to detail) Tj
+0 -12 Td
+(- Time management) Tj
+0 -12 Td
+(- Adaptability) Tj
+0 -12 Td
+(- Positive attitude) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(WORK EXPERIENCE) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Junior Software Developer | WebDev Solutions | 2023 - Present) Tj
+0 -12 Td
+(- Develop web applications using React and Node.js) Tj
+0 -12 Td
+(- Fix bugs and implement new features) Tj
+0 -12 Td
+(- Write unit tests for code coverage) Tj
+0 -12 Td
+(- Collaborate with senior developers) Tj
+0 -12 Td
+(- Participate in code reviews) Tj
+0 -12 Td
+(- Document technical processes) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Intern Developer | StartupHub | 2022 - 2023) Tj
+0 -12 Td
+(- Assisted in building company website) Tj
+0 -12 Td
+(- Created responsive landing pages) Tj
+0 -12 Td
+(- Learned agile development methodology) Tj
+0 -12 Td
+(- Worked with REST APIs) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(EDUCATION) Tj
+0 -12 Td
+(Bachelor of Science in Information Technology) Tj
+0 -12 Td
+(Community College | 2019 - 2023) Tj
+0 -12 Td
+(GPA: 3.6/4.0) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(CERTIFICATIONS) Tj
+0 -12 Td
+(- JavaScript Fundamentals \(freeCodeCamp\)) Tj
+0 -12 Td
+(- Responsive Web Design \(freeCodeCamp\)) Tj
+0 -12 Td
+(- Git and GitHub Essentials) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(PROJECTS) Tj
+0 -12 Td
+(Personal Blog Platform) Tj
+0 -12 Td
+(- Built full-stack blog using MERN stack) Tj
+0 -12 Td
+(- Implemented user authentication) Tj
+0 -12 Td
+(- Deployed on Heroku) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Weather App) Tj
+0 -12 Td
+(- Created weather application with React) Tj
+0 -12 Td
+(- Integrated OpenWeather API) Tj
+0 -12 Td
+(- Responsive design for mobile) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(To-Do List Application) Tj
+0 -12 Td
+(- Developed task management app) Tj
+0 -12 Td
+(- Used localStorage for data persistence) Tj
+0 -12 Td
+(- Clean and intuitive UI) Tj
+0 -12 Td
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f
+0000000009 00000 n
+0000000058 00000 n
+0000000115 00000 n
+0000000229 00000 n
+0000000329 00000 n
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+3135
+%%EOF

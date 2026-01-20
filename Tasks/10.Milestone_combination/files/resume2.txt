@@ -1,0 +1,64 @@
+SARAH JOHNSON
+Data Scientist
+Email: sarah.j@email.com | Phone: (555) 987-6543
+Portfolio: sarahjohnson.io | LinkedIn: linkedin.com/in/sarahjohnson
+
+PROFESSIONAL SUMMARY
+Results-driven Data Scientist with 4 years of experience in statistical analysis, machine learning, and data visualization. Expertise in Python, R, and big data technologies with a proven track record of delivering actionable insights.
+
+TECHNICAL SKILLS
+Programming: Python, R, SQL, Scala
+Data Science: Pandas, NumPy, SciPy, Scikit-learn, Statistics
+Machine Learning: TensorFlow, Keras, XGBoost, Random Forest
+Big Data: Spark, PySpark, Hadoop, Hive, Kafka
+Databases: PostgreSQL, MySQL, MongoDB, Cassandra
+Visualization: Tableau, Power BI, Matplotlib, Seaborn, Plotly
+Cloud: AWS, Google Cloud, Azure
+Tools: Jupyter, Git, Docker, Airflow
+
+SOFT SKILLS
+- Analytical thinking and data-driven decision making
+- Communication and storytelling with data
+- Collaboration with cross-functional teams
+- Problem solving and critical thinking
+- Attention to detail
+- Time management
+- Continuous learning mindset
+
+WORK EXPERIENCE
+
+Senior Data Scientist | Analytics Corp | 2022 - Present
+- Built predictive models improving customer retention by 25%
+- Developed recommendation system using collaborative filtering
+- Created automated data pipelines using Airflow and Spark
+- Presented insights to C-level executives
+- Mentored junior data scientists
+
+Data Scientist | DataTech Solutions | 2020 - 2022
+- Performed exploratory data analysis on large datasets
+- Implemented A/B testing frameworks for product features
+- Built dashboards using Tableau and Power BI
+- Collaborated with engineering teams on ML model deployment
+
+EDUCATION
+Master of Science in Data Science
+Tech University | 2018 - 2020
+
+Bachelor of Science in Statistics
+State College | 2014 - 2018
+
+CERTIFICATIONS
+- Google Cloud Professional Data Engineer
+- Tableau Desktop Specialist
+- Deep Learning Specialization (Coursera)
+
+PROJECTS
+Customer Churn Prediction
+- Analyzed historical data to predict customer churn
+- Achieved 87% accuracy using ensemble methods
+- Deployed model to production using Flask API
+
+Sentiment Analysis Tool
+- Built NLP pipeline for social media sentiment analysis
+- Processed over 1M tweets using Spark
+- Visualized results in real-time dashboard

@@ -1,0 +1,66 @@
+EMILY WILSON
+Junior Software Developer
+emily.wilson@email.com | (555) 111-2222
+Portfolio: emilywilson.dev | GitHub: github.com/ewilson
+
+PROFESSIONAL SUMMARY
+Enthusiastic Junior Developer with 1 year of professional experience and strong foundation in web development. Quick learner passionate about writing clean code and building user-friendly applications.
+
+TECHNICAL SKILLS
+Programming: JavaScript, Python, HTML, CSS
+Frameworks: React, Node.js, Express
+Databases: MySQL, MongoDB
+Tools: Git, GitHub, VS Code, Postman
+Others: REST API, JSON, Bootstrap
+
+SOFT SKILLS
+- Eager to learn and grow
+- Strong communication
+- Teamwork and collaboration
+- Problem solving
+- Attention to detail
+- Time management
+- Adaptability
+- Positive attitude
+
+WORK EXPERIENCE
+
+Junior Software Developer | WebDev Solutions | 2023 - Present
+- Develop web applications using React and Node.js
+- Fix bugs and implement new features
+- Write unit tests for code coverage
+- Collaborate with senior developers
+- Participate in code reviews
+- Document technical processes
+
+Intern Developer | StartupHub | 2022 - 2023
+- Assisted in building company website
+- Created responsive landing pages
+- Learned agile development methodology
+- Worked with REST APIs
+
+EDUCATION
+Bachelor of Science in Information Technology
+Community College | 2019 - 2023
+GPA: 3.6/4.0
+
+CERTIFICATIONS
+- JavaScript Fundamentals (freeCodeCamp)
+- Responsive Web Design (freeCodeCamp)
+- Git and GitHub Essentials
+
+PROJECTS
+Personal Blog Platform
+- Built full-stack blog using MERN stack
+- Implemented user authentication
+- Deployed on Heroku
+
+Weather App
+- Created weather application with React
+- Integrated OpenWeather API
+- Responsive design for mobile
+
+To-Do List Application
+- Developed task management app
+- Used localStorage for data persistence
+- Clean and intuitive UI

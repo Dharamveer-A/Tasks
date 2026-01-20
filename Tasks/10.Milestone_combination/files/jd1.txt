@@ -1,0 +1,68 @@
+JOB DESCRIPTION
+
+Position: Senior Machine Learning Engineer
+Company: AI Innovations Lab
+Location: San Francisco, CA (Hybrid)
+Experience Required: 3-5 years
+
+ABOUT THE ROLE
+We are seeking a talented Senior Machine Learning Engineer to join our growing AI team. The ideal candidate will have strong experience in developing and deploying machine learning models at scale.
+
+REQUIRED SKILLS
+
+Technical Skills:
+- Expert-level Python programming
+- Strong experience with Machine Learning frameworks (TensorFlow, PyTorch, Scikit-learn)
+- Deep Learning and Neural Networks
+- Natural Language Processing (NLP)
+- Computer Vision
+- Data structures and algorithms
+- SQL and NoSQL databases (PostgreSQL, MongoDB)
+- Cloud platforms (AWS, Azure, or Google Cloud)
+- Docker and Kubernetes
+- Git version control
+- REST API development
+- Data Analysis with Pandas and NumPy
+- Big Data technologies (Spark, Kafka)
+
+Soft Skills:
+- Strong communication skills
+- Team leadership and mentoring
+- Problem solving and analytical thinking
+- Project management
+- Collaboration and teamwork
+- Adaptability and learning agility
+- Attention to detail
+- Time management
+
+RESPONSIBILITIES
+- Design and implement machine learning models for production environments
+- Collaborate with data scientists and engineers to develop AI solutions
+- Optimize model performance and scalability
+- Lead technical discussions and code reviews
+- Mentor junior team members
+- Stay updated with latest AI/ML research and technologies
+- Work with cross-functional teams to deliver high-quality products
+
+QUALIFICATIONS
+- Bachelor's or Master's degree in Computer Science, AI, or related field
+- 3-5 years of experience in machine learning engineering
+- Proven track record of deploying ML models in production
+- Strong understanding of software development lifecycle
+- Experience with Agile methodologies
+
+PREFERRED QUALIFICATIONS
+- Experience with MLOps and model deployment
+- Knowledge of advanced statistics
+- Contributions to open-source ML projects
+- Publications in AI/ML conferences
+- AWS or Azure certifications
+- Experience with LLMs and Transformers
+
+BENEFITS
+- Competitive salary and equity
+- Health insurance
+- 401(k) matching
+- Flexible work arrangements
+- Professional development opportunities
+- Collaborative work environment

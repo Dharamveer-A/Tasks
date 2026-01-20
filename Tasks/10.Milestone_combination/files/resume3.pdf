@@ -1,0 +1,157 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /Resources 4 0 R /MediaBox [0 0 612 792] /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> >> >>
+endobj
+5 0 obj
+<< /Length 2767 >>
+stream
+BT
+/F1 10 Tf
+50 750 Td
+(MICHAEL CHEN) Tj
+0 -12 Td
+(Frontend Developer) Tj
+0 -12 Td
+(Email: michael.chen@email.com | Phone: \(555\) 456-7890) Tj
+0 -12 Td
+(Portfolio: michaelchen.dev | GitHub: github.com/mchen) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(PROFESSIONAL SUMMARY) Tj
+0 -12 Td
+(Creative Frontend Developer with 3+ years building responsive, user-friendly web) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(TECHNICAL SKILLS) Tj
+0 -12 Td
+(Languages: JavaScript, TypeScript, HTML, CSS) Tj
+0 -12 Td
+(Frameworks: React, Next.js, Vue.js, Angular) Tj
+0 -12 Td
+(Styling: Tailwind CSS, SASS, Bootstrap, CSS-in-JS) Tj
+0 -12 Td
+(Tools: Git, Webpack, Vite, NPM, Yarn) Tj
+0 -12 Td
+(Testing: Jest, Cypress, React Testing Library) Tj
+0 -12 Td
+(Design: Figma, Adobe XD) Tj
+0 -12 Td
+(Others: REST API, GraphQL, Responsive Design) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(SOFT SKILLS) Tj
+0 -12 Td
+(- Creativity and design thinking) Tj
+0 -12 Td
+(- Attention to detail) Tj
+0 -12 Td
+(- Communication with designers and backend teams) Tj
+0 -12 Td
+(- Problem solving) Tj
+0 -12 Td
+(- Time management) Tj
+0 -12 Td
+(- Teamwork) Tj
+0 -12 Td
+(- User empathy) Tj
+0 -12 Td
+(- Adaptability) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(EXPERIENCE) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Frontend Developer | WebDesign Studio | 2021 - Present) Tj
+0 -12 Td
+(- Developed responsive web applications using React and TypeScript) Tj
+0 -12 Td
+(- Collaborated with UX/UI designers to implement pixel-perfect designs) Tj
+0 -12 Td
+(- Optimized application performance achieving 95+ Lighthouse scores) Tj
+0 -12 Td
+(- Implemented accessibility features following WCAG guidelines) Tj
+0 -12 Td
+(- Mentored junior developers on best practices) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Junior Frontend Developer | StartupXYZ | 2020 - 2021) Tj
+0 -12 Td
+(- Built reusable component library using React) Tj
+0 -12 Td
+(- Integrated RESTful APIs with frontend applications) Tj
+0 -12 Td
+(- Performed cross-browser testing and bug fixes) Tj
+0 -12 Td
+(- Participated in agile development process) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(EDUCATION) Tj
+0 -12 Td
+(Bachelor of Science in Computer Science) Tj
+0 -12 Td
+(University of Technology | 2016 - 2020) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(CERTIFICATIONS) Tj
+0 -12 Td
+(- React Developer Certification) Tj
+0 -12 Td
+(- Frontend Masters Complete Path) Tj
+0 -12 Td
+(- JavaScript Algorithms Certification) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(PROJECTS) Tj
+0 -12 Td
+(E-Learning Platform) Tj
+0 -12 Td
+(- Built interactive learning platform with React and Next.js) Tj
+0 -12 Td
+(- Implemented video player with custom controls) Tj
+0 -12 Td
+(- Integrated payment gateway) Tj
+0 -12 Td
+() Tj
+0 -12 Td
+(Portfolio Website Builder) Tj
+0 -12 Td
+(- Created drag-and-drop website builder) Tj
+0 -12 Td
+(- Used TypeScript for type safety) Tj
+0 -12 Td
+(- Deployed on Vercel with CI/CD) Tj
+0 -12 Td
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f
+0000000009 00000 n
+0000000058 00000 n
+0000000115 00000 n
+0000000229 00000 n
+0000000329 00000 n
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+3253
+%%EOF

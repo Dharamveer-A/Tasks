@@ -1,0 +1,86 @@
+POSITION DESCRIPTION
+
+Role: Senior Data Analyst
+Company: FinTech Solutions Inc.
+Location: New York, NY (Hybrid)
+Required Experience: 3+ years
+
+ABOUT US
+We're a leading fintech company revolutionizing digital payments. Our data team drives strategic decisions through advanced analytics and insights.
+
+TECHNICAL REQUIREMENTS
+
+Data Analysis:
+- SQL (advanced level - joins, subqueries, window functions)
+- Python for data analysis (Pandas, NumPy)
+- Statistical analysis and hypothesis testing
+- Excel (pivot tables, VLOOKUP, macros)
+- Data cleaning and preparation
+
+Visualization:
+- Tableau or Power BI (expert level)
+- Python visualization libraries (Matplotlib, Seaborn, Plotly)
+- Dashboard design and development
+- Data storytelling
+
+Databases:
+- PostgreSQL
+- MySQL
+- BigQuery or Snowflake
+- Understanding of data warehousing
+
+Additional Technical:
+- R programming (preferred)
+- Git for version control
+- Basic understanding of machine learning
+- ETL processes
+- A/B testing frameworks
+
+SOFT SKILLS REQUIRED
+- Strong analytical thinking
+- Excellent communication and presentation skills
+- Business acumen
+- Stakeholder management
+- Attention to detail
+- Problem solving
+- Time management
+- Collaboration with cross-functional teams
+- Curiosity and continuous learning
+
+KEY RESPONSIBILITIES
+- Analyze large datasets to identify trends and insights
+- Create and maintain executive dashboards
+- Perform statistical analysis to support business decisions
+- Collaborate with product and engineering teams
+- Present findings to senior leadership
+- Define and track key performance indicators (KPIs)
+- Develop automated reporting solutions
+- Conduct A/B tests and analyze results
+- Ensure data quality and accuracy
+
+QUALIFICATIONS
+- Bachelor's degree in Statistics, Mathematics, Economics, or related field
+- 3+ years of experience in data analysis role
+- Proven track record of delivering actionable insights
+- Strong SQL skills with large datasets
+- Experience with BI tools (Tableau/Power BI)
+- Financial services experience preferred
+
+PREFERRED QUALIFICATIONS
+- Master's degree in quantitative field
+- Experience with cloud platforms (AWS, GCP, Azure)
+- Knowledge of Spark or other big data tools
+- Understanding of machine learning concepts
+- Certification in Tableau or Power BI
+- Experience with Airflow or similar orchestration tools
+
+BENEFITS & PERKS
+- Salary range: $90,000 - $130,000
+- Annual bonus
+- Comprehensive health coverage
+- 401(k) with company match
+- Flexible PTO policy
+- Professional development budget
+- Hybrid work model (3 days in office)
+- Gym membership reimbursement
+- Catered lunches

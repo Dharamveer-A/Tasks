@@ -1,0 +1,98 @@
+CAREER OPPORTUNITY
+
+Position: DevOps Engineer
+Organization: CloudTech Systems
+Base: Austin, TX / Remote
+Years of Experience: 4-6 years
+
+ROLE SUMMARY
+We need a skilled DevOps Engineer to automate, optimize, and maintain our cloud infrastructure. You'll work with cutting-edge technologies and help scale our platform.
+
+CORE TECHNICAL SKILLS
+
+Cloud Platforms:
+- AWS (EC2, S3, RDS, Lambda, CloudFormation)
+- Azure or Google Cloud Platform
+- Cloud security best practices
+
+Infrastructure as Code:
+- Terraform
+- Ansible
+- CloudFormation
+- Pulumi (nice to have)
+
+Containerization & Orchestration:
+- Docker
+- Kubernetes
+- Helm charts
+- Container security
+
+CI/CD:
+- Jenkins
+- GitLab CI/CD
+- GitHub Actions
+- ArgoCD
+
+Scripting & Programming:
+- Python
+- Bash/Shell scripting
+- Go (preferred)
+
+Monitoring & Logging:
+- Prometheus
+- Grafana
+- ELK Stack (Elasticsearch, Logstash, Kibana)
+- DataDog or New Relic
+
+Version Control:
+- Git
+- GitHub/GitLab
+
+ESSENTIAL SOFT SKILLS
+- Strong problem-solving abilities
+- Excellent communication
+- Team collaboration
+- Documentation skills
+- Ownership and accountability
+- Adaptability to new technologies
+- Mentoring and knowledge sharing
+- Time management
+- Critical thinking
+
+RESPONSIBILITIES
+- Design and implement CI/CD pipelines
+- Manage and optimize cloud infrastructure
+- Automate deployment processes
+- Monitor system performance and reliability
+- Implement security best practices
+- Handle incident response and troubleshooting
+- Collaborate with development teams
+- Maintain documentation
+- Optimize cloud costs
+- Participate in on-call rotation
+
+REQUIREMENTS
+- Bachelor's degree in Computer Science or related field
+- 4-6 years of DevOps/SRE experience
+- Strong Linux/Unix administration skills
+- Experience with microservices architecture
+- Understanding of networking concepts
+- Database administration knowledge
+
+BONUS QUALIFICATIONS
+- AWS/Azure/GCP certifications
+- Kubernetes certifications (CKA/CKAD)
+- Experience with service mesh (Istio, Linkerd)
+- Knowledge of serverless architectures
+- Experience with HashiCorp tools (Vault, Consul)
+- Contributions to open-source DevOps tools
+
+COMPENSATION & BENEFITS
+- Competitive salary ($110k-$160k based on experience)
+- Performance bonuses
+- Stock options
+- Comprehensive healthcare
+- Remote work options
+- Learning & certification budget
+- Latest MacBook Pro or Linux workstation
+- Conference attendance opportunities
