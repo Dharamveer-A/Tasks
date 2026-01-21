@@ -184,7 +184,7 @@ if jd_file and resume_file:
             st.text_area("Cleaned Job Description", cleaned_jd, height=200, key="cleaned_jd")
 
     st.success(
-        "Milestone 1 Completed: Documents uploaded, parsed, cleaned and previewed successfully."
+        "✅ Milestone 1 Completed: Documents uploaded, parsed, cleaned and previewed successfully."
     )
 
     # -------------------------------------------------------------------------
@@ -214,16 +214,16 @@ if jd_file and resume_file:
     col1, col2 = st.columns(2)
     with col1:
         if resume_experience:
-            st.info(f"**Resume Experience:** {resume_experience['min_exp']}" + 
+            st.info(f"📄 **Resume Experience:** {resume_experience['min_exp']}" + 
                    (f"-{resume_experience['max_exp']}" if resume_experience['max_exp'] else "+") + " years")
         else:
-            st.warning("No experience information found in resume")
+            st.warning("⚠️ No experience information found in resume")
     with col2:
         if jd_experience:
-            st.info(f"**JD Required Experience:** {jd_experience['min_exp']}" + 
+            st.info(f"📋 **JD Required Experience:** {jd_experience['min_exp']}" + 
                    (f"-{jd_experience['max_exp']}" if jd_experience['max_exp'] else "+") + " years")
         else:
-            st.warning("No experience requirement found in JD")
+            st.warning("⚠️ No experience requirement found in JD")
 
     # Load spaCy model with error handling
     @st.cache_resource
@@ -231,7 +231,7 @@ if jd_file and resume_file:
         try:
             return spacy.load("en_core_web_trf")
         except OSError:
-            st.error("spaCy model 'en_core_web_trf' not found. Please install it using: python -m spacy download en_core_web_trf")
+            st.error("⚠️ spaCy model 'en_core_web_trf' not found. Please install it using: python -m spacy download en_core_web_trf")
             return None
     
     nlp = load_spacy_model()
@@ -409,7 +409,7 @@ if jd_file and resume_file:
         return sorted(skills_found)
 
     # Extract skills
-    with st.spinner(" Extracting skills using NLP..."):
+    with st.spinner("🔍 Extracting skills using NLP..."):
         resume_skills = {
             "technical": extract_technical_skills(cleaned_resume, master_technical_skills),
             "soft": extract_soft_skills(cleaned_resume, master_soft_skills)
@@ -425,7 +425,7 @@ if jd_file and resume_file:
     col1, col2 = st.columns(2)
 
     with col1:
-        st.markdown("###  Resume Skills")
+        st.markdown("### 📄 Resume Skills")
         with st.expander("💻 Technical Skills", expanded=True):
             if resume_skills["technical"]:
                 st.write(", ".join(resume_skills["technical"]))
@@ -438,7 +438,7 @@ if jd_file and resume_file:
                 st.info("No soft skills found")
 
     with col2:
-        st.markdown("### JD Skills")
+        st.markdown("### 📋 JD Skills")
         with st.expander("💻 Technical Skills", expanded=True):
             if jd_skills["technical"]:
                 st.write(", ".join(jd_skills["technical"]))
@@ -554,7 +554,7 @@ if jd_file and resume_file:
         value=f'{metrics["match_percent"]}%'
     )
 
-    st.success("Milestone 2 Completed: Skills extracted successfully using NLP.")
+    st.success("✅ Milestone 2 Completed: Skills extracted successfully using NLP.")
 
     # --------------------------------------------------------------------------
     # Milestone - 3
@@ -581,7 +581,7 @@ if jd_file and resume_file:
         """Plot skill similarity heatmap"""
         fig, ax = plt.subplots(figsize=(10, 6))
 
-        im = ax.imshow(matrix, cmap="YlGn", aspect='auto')
+        im = ax.imshow(matrix, cmap="Purples", aspect='auto')
 
         ax.set_xticks(range(len(jd_labels)))
         ax.set_yticks(range(len(resume_labels)))
@@ -633,7 +633,7 @@ if jd_file and resume_file:
         st.pyplot(fig_heatmap)
         plt.close(fig_heatmap)
     else:
-        st.warning("Insufficient skills to build similarity matrix")
+        st.warning("⚠️ Insufficient skills to build similarity matrix")
 
     def classify_skill_matches(similarity_matrix, resume_skills, jd_skills):
         """Classify skills as matched, partial, or missing"""
@@ -757,19 +757,19 @@ if jd_file and resume_file:
     with right:
         with st.container():
             r1, r2 = st.columns(2)
-            r1.metric(" Matched Skills", match_counts["matched"])
-            r2.metric(" Partially Matched", match_counts["partial"])
+            r1.metric("✅ Matched Skills", match_counts["matched"])
+            r2.metric("⚠️ Partially Matched", match_counts["partial"])
 
             r3, r4 = st.columns(2)
-            r3.metric(" Missing Skills", match_counts["missing"])
-            r4.metric(" Avg Match %", f'{match_counts["avg_match"]}%')
+            r3.metric("❌ Missing Skills", match_counts["missing"])
+            r4.metric("📊 Avg Match %", f'{match_counts["avg_match"]}%')
 
     st.subheader("Skill Gap Details")
 
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        st.markdown("### Matched Skills")
+        st.markdown("### ✅ Matched Skills")
         if skill_match_result["matched"]:
             for skill in skill_match_result["matched"]:
                 st.success(f"✓ {skill}")
@@ -777,7 +777,7 @@ if jd_file and resume_file:
             st.info("No perfectly matched skills")
 
     with col2:
-        st.markdown("### Partial Matches")
+        st.markdown("### ⚠️ Partial Matches")
         if skill_match_result["partial"]:
             for skill in skill_match_result["partial"]:
                 st.warning(f"≈ {skill}")
@@ -785,14 +785,14 @@ if jd_file and resume_file:
             st.info("No partially matched skills")
 
     with col3:
-        st.markdown("### Missing Skills")
+        st.markdown("### ❌ Missing Skills")
         if skill_match_result["missing"]:
             for skill in skill_match_result["missing"]:
                 st.error(f"✗ {skill}")
         else:
             st.success("No missing skills!")
 
-    st.success("Milestone 3 Completed: Skill gap analysis completed successfully.")
+    st.success("✅ Milestone 3 Completed: Skill gap analysis completed successfully.")
 
     # -----------------------------------------------------------------------------
     # Milestone - 4
@@ -825,9 +825,9 @@ if jd_file and resume_file:
 
     # ---------------- METRICS ----------------
     c1, c2, c3 = st.columns(3)
-    c1.metric("Overall Match", f"{overall_match}%")
-    c2.metric("Matched Skills", str(matched_skills_count))
-    c3.metric("Missing Skills", str(missing_skills_count))
+    c1.metric("📊 Overall Match", f"{overall_match}%")
+    c2.metric("✅ Matched Skills", str(matched_skills_count))
+    c3.metric("❌ Missing Skills", str(missing_skills_count))
 
     # ---------------- BAR CHART ----------------
     bar_fig = go.Figure()
@@ -874,7 +874,7 @@ if jd_file and resume_file:
     right.plotly_chart(radar_fig, use_container_width=True)
 
     # ---------------- SKILL PROGRESS ----------------
-    st.subheader("Sample Skill Proficiency")
+    st.subheader("📈 Sample Skill Proficiency")
     st.caption("Note: These are sample scores for demonstration. For actual proficiency, use skill assessment tools.")
     
     sample_skills = [("Python", 92), ("Machine Learning", 88), ("SQL", 65)]
@@ -886,17 +886,65 @@ if jd_file and resume_file:
             st.progress(score / 100)
             st.caption(f"{score}%")
 
-    # ---------------- UPSKILLING ----------------
-    st.subheader("Upskilling Recommendations")
-    st.caption("Based on missing skills from job description")
+    # ---------------- AREA CHART ----------------
+    st.subheader("📊 Skill Similarity Score Distribution")
     
-    if skill_match_result["missing"]:
-        # Show top 3 missing skills
-        top_missing = skill_match_result["missing"][:3]
-        for skill in top_missing:
-            st.info(f"📚 **{skill.title()}**\nConsider taking courses or certifications in this area")
+    if resume_all_skills and jd_all_skills and len(similarity_matrix) > 0:
+        # Calculate average similarity score for each JD skill
+        avg_similarity_scores = []
+        for j in range(len(jd_all_skills)):
+            column_scores = similarity_matrix[:, j]
+            avg_score = np.mean(column_scores) * 100  # Convert to percentage
+            avg_similarity_scores.append(avg_score)
+        
+        # Create area chart data
+        area_df = pd.DataFrame({
+            'Skill': jd_all_skills,
+            'Similarity Score (%)': avg_similarity_scores
+        })
+        
+        # Create area chart using plotly
+        area_fig = go.Figure()
+        area_fig.add_trace(go.Scatter(
+            x=area_df['Skill'],
+            y=area_df['Similarity Score (%)'],
+            fill='tozeroy',
+            name='Similarity Score',
+            line_color='#7c3aed',
+            fillcolor='rgba(124, 58, 237, 0.3)'
+        ))
+        
+        area_fig.update_layout(
+            title="Average Similarity Score per Job Requirement",
+            xaxis_title="Skills",
+            yaxis_title="Similarity Score (%)",
+            height=400,
+            hovermode='x unified',
+            yaxis=dict(range=[0, 100])
+        )
+        
+        st.plotly_chart(area_fig, use_container_width=True)
     else:
-        st.success("Great! You have all the required skills for this job!")
+        st.info("Upload documents to see similarity score distribution")
+
+    # ---------------- UPSKILLING ----------------
+    st.subheader("💡 Upskilling Recommendations")
+    st.caption("Based on missing and partially matched skills from job description")
+    
+    # Show missing skills
+    if skill_match_result["missing"]:
+        st.markdown("**🔴 Priority Skills to Learn (Missing):**")
+        for i, skill in enumerate(skill_match_result["missing"][:5], 1):
+            st.error(f"{i}. **{skill.title()}** - Not found in your resume")
+    
+    # Show partially matched skills
+    if skill_match_result["partial"]:
+        st.markdown("**🟡 Skills to Strengthen (Partial Match):**")
+        for i, skill in enumerate(skill_match_result["partial"][:5], 1):
+            st.warning(f"{i}. **{skill.title()}** - Improve proficiency in this area")
+    
+    if not skill_match_result["missing"] and not skill_match_result["partial"]:
+        st.success("🎉 Excellent! You have all the required skills for this job!")
 
     # ---------------- REPORT CONTENT ----------------
     report_text = f"""
@@ -946,19 +994,19 @@ Target match rate: 80%+
 Generated on: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}
 """
 
-    st.subheader("Report Download")
+    st.subheader("📥 Report Download")
 
     col1, col2, col3 = st.columns(3)
 
     with col1:
         # ---------------- CSV ----------------
         # Create three separate lists for the three columns
-        matched_list = skill_match_result['matched'] if skill_match_result['matched'] else ['None']
-        partial_list = skill_match_result['partial'] if skill_match_result['partial'] else ['None']
-        missing_list = skill_match_result['missing'] if skill_match_result['missing'] else ['None']
+        matched_list = skill_match_result['matched'] if skill_match_result['matched'] else []
+        partial_list = skill_match_result['partial'] if skill_match_result['partial'] else []
+        missing_list = skill_match_result['missing'] if skill_match_result['missing'] else []
         
         # Pad lists to same length
-        max_len = max(len(matched_list), len(partial_list), len(missing_list))
+        max_len = max(len(matched_list), len(partial_list), len(missing_list), 1)
         matched_list += [''] * (max_len - len(matched_list))
         partial_list += [''] * (max_len - len(partial_list))
         missing_list += [''] * (max_len - len(missing_list))
@@ -970,7 +1018,7 @@ Generated on: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}
         })
 
         st.download_button(
-            "CSV Report",
+            "⬇️ CSV Report",
             df_export.to_csv(index=False).encode("utf-8"),
             "skill_gap_report.csv",
             "text/csv",
@@ -1008,7 +1056,7 @@ Generated on: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}
             doc.add_heading('Skills Breakdown', 1)
             
             # Matched Skills
-            doc.add_heading('✓ Matched Skills', 2)
+            doc.add_heading('Matched Skills', 2)
             if skill_match_result['matched']:
                 for skill in skill_match_result['matched']:
                     doc.add_paragraph(skill, style='List Bullet')
@@ -1016,7 +1064,7 @@ Generated on: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}
                 doc.add_paragraph('No perfectly matched skills found.')
             
             # Partially Matched Skills
-            doc.add_heading('≈ Partially Matched Skills', 2)
+            doc.add_heading('Partially Matched Skills', 2)
             if skill_match_result['partial']:
                 for skill in skill_match_result['partial']:
                     doc.add_paragraph(skill, style='List Bullet')
@@ -1024,7 +1072,7 @@ Generated on: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}
                 doc.add_paragraph('No partially matched skills found.')
             
             # Missing Skills
-            doc.add_heading('✗ Missing Skills', 2)
+            doc.add_heading('Missing Skills', 2)
             if skill_match_result['missing']:
                 for skill in skill_match_result['missing']:
                     doc.add_paragraph(skill, style='List Bullet')
@@ -1039,7 +1087,7 @@ Generated on: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}
             )
             
             if overall_match >= 70:
-                doc.add_paragraph('✓ You have a strong skill match for this position!', style='List Bullet')
+                doc.add_paragraph('You have a strong skill match for this position!', style='List Bullet')
             else:
                 doc.add_paragraph('Focus on upskilling in the missing areas to increase your match rate.', style='List Bullet')
             
@@ -1056,7 +1104,7 @@ Generated on: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}
         doc_file = generate_word_report()
 
         st.download_button(
-            "DOCX Report",
+            "⬇️ DOCX Report",
             doc_file,
             "skill_gap_analysis_report.docx",
             "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
@@ -1103,8 +1151,8 @@ Generated on: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}
             if skill_match_result['matched']:
                 for skill in skill_match_result['matched']:
                     clean_skill = skill.encode('latin-1', 'replace').decode('latin-1')
-                    pdf.cell(10, 6, '', 0, 0)
-                    pdf.cell(0, 6, f"- {clean_skill}", 0, 1)
+                    pdf.cell(5, 6, '', 0, 0)
+                    pdf.cell(0, 6, f"{clean_skill}", 0, 1)
             else:
                 pdf.cell(0, 6, "No perfectly matched skills found.", 0, 1)
             pdf.ln(3)
@@ -1120,8 +1168,8 @@ Generated on: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}
             if skill_match_result['partial']:
                 for skill in skill_match_result['partial']:
                     clean_skill = skill.encode('latin-1', 'replace').decode('latin-1')
-                    pdf.cell(10, 6, '', 0, 0)
-                    pdf.cell(0, 6, f"- {clean_skill}", 0, 1)
+                    pdf.cell(5, 6, '', 0, 0)
+                    pdf.cell(0, 6, f"{clean_skill}", 0, 1)
             else:
                 pdf.cell(0, 6, "No partially matched skills found.", 0, 1)
             pdf.ln(3)
@@ -1137,8 +1185,8 @@ Generated on: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}
             if skill_match_result['missing']:
                 for skill in skill_match_result['missing']:
                     clean_skill = skill.encode('latin-1', 'replace').decode('latin-1')
-                    pdf.cell(10, 6, '', 0, 0)
-                    pdf.cell(0, 6, f"- {clean_skill}", 0, 1)
+                    pdf.cell(5, 6, '', 0, 0)
+                    pdf.cell(0, 6, f"{clean_skill}", 0, 1)
             else:
                 pdf.cell(0, 6, "No missing skills - Great job!", 0, 1)
             pdf.ln(5)
@@ -1166,7 +1214,7 @@ Generated on: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}
         try:
             pdf_bytes = generate_pdf_report()
             st.download_button(
-                "PDF Report",
+                "⬇️ PDF Report",
                 pdf_bytes,
                 "skill_gap_analysis_report.pdf",
                 "application/pdf",
@@ -1175,12 +1223,12 @@ Generated on: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}
         except Exception as e:
             st.error(f"Error generating PDF: {str(e)}")
 
-    st.success("Milestone 4 Completed: Dashboard loaded successfully with export options.")
+    st.success("✅ Milestone 4 Completed: Dashboard loaded successfully with export options.")
     
     # Final Summary
     st.markdown("---")
     st.markdown("""
-    ### Analysis Complete!
+    ### 🎯 Analysis Complete!
     
     **Next Steps:**
     1. Review the missing skills identified above
@@ -1194,12 +1242,12 @@ Generated on: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}
 else:
     st.info("👆 Please upload both Resume and Job Description files to begin the analysis.")
     st.markdown("""
-    ### Supported File Formats:
+    ### 📋 Supported File Formats:
     - **PDF** (.pdf)
     - **Word Document** (.docx)
     - **Text File** (.txt)
     
-    ### Tips:
+    ### 💡 Tips:
     - Ensure your files are properly formatted
     - Include clear skill listings in both documents
     - Experience information should be mentioned as "X years" or "X-Y years"
